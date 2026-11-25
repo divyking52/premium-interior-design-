@@ -1,0 +1,2542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PREMIUM Interior Design | Luxury Interior Designer in Navi Mumbai</title>
+<meta name="description" content="Premium Interior Design, led by Director Vikas Satre, specializes in luxury residential &amp; commercial interior design in Navi Mumbai. Transform your space with our expert designers with 30+ years of experience.">
+<meta name="theme-color" content="#29231F">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css">
+<script>
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.documentElement.classList.add("reduced");
+  }
+</script>
+<style>
+  :root {
+    --ivory: #F3EFE8;
+    --sand: #C9BBA8;
+    --espresso: #29231F;
+    --ink: #1A1614;
+    --taupe: #8C8178;
+    --stone: #E4DDD4;
+    --line: rgba(41, 35, 31, 0.18);
+    --line-light: rgba(243, 239, 232, 0.28);
+    --serif: "Cormorant Garamond", "Times New Roman", serif;
+    --sans: "Outfit", "Segoe UI", sans-serif;
+    --nav: 4.6rem;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { background: var(--ivory); }
+  body {
+    margin: 0;
+    background: var(--ivory);
+    color: var(--espresso);
+    font-family: var(--sans);
+    font-weight: 300;
+    font-size: 1.02rem;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+  }
+  img { max-width: 100%; display: block; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  button { background: none; border: 0; cursor: pointer; }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--espresso); color: var(--ivory); }
+  :focus-visible { outline: 1px solid var(--sand); outline-offset: 3px; }
+  .skip {
+    position: absolute; left: 1rem; top: -4rem; z-index: 100;
+    background: var(--ivory); color: var(--espresso); padding: 0.6rem 1rem;
+  }
+  .skip:focus { top: 1rem; }
+  .vh {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); border: 0;
+  }
+
+  .progress {
+    position: fixed; top: 0; left: 0; right: 0; height: 2px; z-index: 80;
+    background: transparent; transform-origin: 0 50%; transform: scaleX(0);
+    pointer-events: none;
+  }
+  .progress span {
+    display: block; height: 100%; background: var(--sand); transform-origin: 0 50%; transform: scaleX(0);
+  }
+
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 70;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0.85rem 4vw; height: var(--nav);
+    color: var(--ivory);
+    background: linear-gradient(to bottom, rgba(26,22,20,0.45), rgba(26,22,20,0));
+    transition: background 0.45s ease, color 0.45s ease;
+  }
+  body[data-nav="light"] .nav {
+    color: var(--espresso);
+    background: rgba(243, 239, 232, 0.92);
+  }
+  body[data-nav="dark"] .nav {
+    color: var(--ivory);
+    background: rgba(26, 22, 20, 0.72);
+  }
+  .brand { display: flex; align-items: center; gap: 0.75rem; letter-spacing: 0.28em; font-size: 0.72rem; font-weight: 500; }
+  .brand img { width: 46px; height: 46px; border-radius: 50%; object-fit: cover; }
+  .nav-links { display: flex; gap: 1.7rem; list-style: none; margin: 0; padding: 0; }
+  .nav-links a {
+    font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 400;
+  }
+  .nav-links a:hover { color: var(--sand); }
+  .menu-btn {
+    display: none; width: 46px; height: 46px; position: relative; color: inherit;
+  }
+  .menu-btn span, .menu-btn span::before, .menu-btn span::after {
+    display: block; height: 1px; width: 22px; background: currentColor; position: absolute; left: 12px;
+    transition: transform 0.35s ease, top 0.35s ease, background 0.2s ease;
+  }
+  .menu-btn span { top: 22px; }
+  .menu-btn span::before { content: ""; top: -7px; }
+  .menu-btn span::after { content: ""; top: 7px; }
+  .menu-btn[aria-expanded="true"] span { background: transparent; }
+  .menu-btn[aria-expanded="true"] span::before { top: 0; transform: rotate(45deg); }
+  .menu-btn[aria-expanded="true"] span::after { top: 0; transform: rotate(-45deg); }
+  .menu-panel {
+    position: fixed; inset: 0; z-index: 65; background: var(--ink); color: var(--ivory);
+    display: flex; flex-direction: column; justify-content: flex-start;
+    padding: calc(var(--nav) + 4.5vh) 8vw 6vh; transform: translateY(-101%);
+  }
+  .menu-panel a {
+    font-family: var(--serif); font-size: clamp(2.15rem, 8vw, 3.4rem); line-height: 1.05;
+    display: block; border-top: 1px solid var(--line-light); padding: 0.7rem 0;
+    transition: color 0.3s ease, padding-left 0.35s ease;
+  }
+  .menu-panel a:last-child { border-bottom: 1px solid var(--line-light); }
+  .menu-panel a:hover, .menu-panel a:focus-visible { color: var(--sand); padding-left: 0.45rem; }
+  .menu-panel.open { transform: translateY(0); }
+  #menu.open ~ .float-contact { opacity: 0; pointer-events: none; }
+
+  .hero { position: relative; height: 100vh; height: 100svh; background: #0c2340; }
+  .hero-pin { position: relative; height: 100%; overflow: hidden; background: #0c2340; }
+  #room { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .blueprint {
+    position: absolute; inset: 0; z-index: 1; pointer-events: none; overflow: hidden;
+    background-color: #0c2340;
+    background-image:
+      linear-gradient(rgba(158, 206, 232, 0.22) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(158, 206, 232, 0.22) 1px, transparent 1px),
+      linear-gradient(rgba(214, 241, 255, 0.16) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(214, 241, 255, 0.16) 1px, transparent 1px);
+    background-size: 28px 28px, 28px 28px, 140px 140px, 140px 140px;
+  }
+  .blueprint svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .blueprint .bp-plan, .blueprint .bp-elev {
+    inset: auto; top: auto; right: auto;
+    bottom: 12%; left: 20%; width: 60%; height: 24%;
+    transform-origin: 50% 100%;
+  }
+  .bp-draw {
+    fill: none; stroke: #d7f3ff; stroke-width: 1.6; stroke-linecap: square; stroke-linejoin: miter;
+  }
+  .bp-draw.soft { stroke: #7eb6d6; stroke-width: 1.1; }
+  .bp-elev .bp-draw { stroke-dasharray: 1800; stroke-dashoffset: 1800; }
+  .blueprint text {
+    fill: #d7f3ff; font-family: var(--sans); letter-spacing: 0.18em; font-size: 13px;
+  }
+  .blueprint .bp-strong { font-family: var(--serif); letter-spacing: 0.08em; font-size: 22px; }
+  html.show-photo .blueprint { display: none; }
+  .loader {
+    position: fixed; inset: 0; z-index: 120; color: #d7f3ff;
+    display: grid; place-items: center;
+    background-color: #0c2340;
+    background-image:
+      linear-gradient(rgba(158, 206, 232, 0.22) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(158, 206, 232, 0.22) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+  .loader-sheet { width: min(88vw, 980px); height: auto; }
+  .ld-draw {
+    fill: none; stroke: #d7f3ff; stroke-width: 1.7; stroke-linecap: square; stroke-linejoin: miter;
+    stroke-dasharray: 2600; stroke-dashoffset: 2600;
+  }
+  .ld-draw.soft { stroke: #7eb6d6; stroke-width: 1.15; }
+  .loader text { fill: #d7f3ff; font-family: var(--sans); letter-spacing: 0.2em; font-size: 14px; }
+  .loader .ld-name { font-family: var(--serif); font-size: 28px; letter-spacing: 0.12em; }
+  .loader-foot {
+    position: absolute; left: 7vw; right: 7vw; bottom: 6vh;
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+    letter-spacing: 0.22em; text-transform: uppercase; font-size: 0.68rem;
+  }
+  .loader-bar { position: absolute; left: 7vw; right: 7vw; bottom: 4vh; height: 1px; background: rgba(215, 243, 255, 0.22); }
+  .loader-bar span { display: block; height: 100%; width: 0; background: #d7f3ff; }
+  html.is-loading, html.is-loading body { overflow: hidden; }
+  .hero-photo { position: absolute; inset: 0; opacity: 0; }
+  .hero-photo img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.08); }
+  .hero-shade {
+    position: absolute; inset: 0; z-index: 2; pointer-events: none; opacity: 0.2;
+    background:
+      radial-gradient(closest-side at 50% 46%, rgba(26,22,20,0.46), transparent 74%),
+      linear-gradient(90deg, rgba(26,22,20,0.45) 0%, rgba(26,22,20,0.12) 42%, rgba(26,22,20,0.08) 100%);
+  }
+  .hero-copy {
+    position: absolute; z-index: 3; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; color: var(--ivory); padding: 0 8vw;
+  }
+  .hero-copy h1 {
+    margin: 0;
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(2.5rem, 4.8vw, 4.6rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    text-shadow: 0 10px 30px rgba(26, 22, 20, 0.28);
+  }
+  .hero-copy h1 span { display: block; }
+  .hero-cta {
+    margin-top: 1.8rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    border-bottom: 1px solid var(--sand);
+    padding-bottom: 0.4rem;
+  }
+  .hero-meta {
+    position: absolute; z-index: 3; right: 8.5rem; bottom: 1.7rem;
+    color: var(--ivory); display: flex; flex-direction: column; align-items: flex-end; gap: 0.35rem;
+  }
+  .hero-meta b {
+    font-family: var(--serif); font-size: 1.4rem; font-weight: 500; letter-spacing: 0.08em;
+  }
+  .hero-meta span {
+    font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 400;
+  }
+  .scroll-hint {
+    position: absolute; z-index: 3; left: 6vw; bottom: 4.5vh;
+    color: var(--ivory); font-size: 0.68rem; letter-spacing: 0.28em; text-transform: uppercase;
+    display: flex; align-items: center; gap: 0.8rem;
+  }
+  .scroll-hint i {
+    display: block; width: 1px; height: 42px; background: var(--ivory); transform-origin: top;
+    animation: hint 1.8s ease-in-out infinite;
+  }
+  @keyframes hint {
+    0% { transform: scaleY(0.2); opacity: 0; }
+    40% { opacity: 1; }
+    100% { transform: scaleY(1); opacity: 0; }
+  }
+  html.show-photo .hero-photo { opacity: 1; }
+  html.show-photo .hero-photo img { transform: none; }
+  html.show-photo #room,
+  html.show-photo .hero-meta,
+  html.show-photo .scroll-hint,
+  html.reduced .scroll-hint { display: none; }
+
+  .about {
+    display: grid; grid-template-columns: minmax(320px, 0.9fr) 1.15fr;
+    min-height: 100vh; background: var(--ivory); position: relative; z-index: 4;
+  }
+  html:not(.reduced) .about { margin-top: -34vh; }
+  .about-copy {
+    padding: calc(var(--nav) + 8vh) 6vw 10vh;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .eyebrow {
+    margin: 0 0 1.2rem;
+    font-size: 0.72rem; letter-spacing: 0.32em; text-transform: uppercase; font-weight: 500;
+  }
+  .about-copy h2, .folio-head h2, .services-head h2, .t-head h2 {
+    font-family: var(--serif); font-weight: 500; letter-spacing: -0.03em; line-height: 0.9; margin: 0;
+  }
+  .about-copy h2 { font-size: clamp(3.4rem, 6vw, 6.4rem); }
+  .line { display: block; overflow: hidden; }
+  .line span { display: block; }
+  .about-copy p.lead {
+    max-width: 34rem; font-family: var(--serif); font-style: italic; font-size: clamp(1.35rem, 2vw, 1.85rem);
+    line-height: 1.35; margin: 2.2rem 0 0;
+  }
+  .about-visual { position: relative; min-height: 92vh; overflow: hidden; }
+  .about-main, .about-float, .about-small { position: absolute; overflow: hidden; }
+  .about-main { top: 8%; right: 0; width: 72%; height: 84%; }
+  .about-main img, .about-float img, .about-small img { width: 100%; height: 100%; object-fit: cover; }
+  .about-float {
+    left: 4%; bottom: 8%; z-index: 2;
+    width: min(280px, 36%); height: auto; aspect-ratio: 247 / 532;
+    padding: 0; border: 8px solid #fff; background: #fff;
+    box-shadow: 0 18px 40px rgba(41, 35, 31, 0.16);
+  }
+  .about-float img { object-position: center center; }
+  .about-small { left: 8%; top: 12%; width: 22%; height: 28%; z-index: 2; border: 10px solid var(--ivory); }
+  .about-main { clip-path: inset(0); }
+
+  .services { background: #161311; color: var(--ivory); position: relative; }
+  .services-pin { position: relative; }
+  .services-stage { display: grid; grid-template-columns: 1fr; min-height: 100svh; }
+  .services.horizontal .services-pin { height: 100vh; height: 100svh; overflow: hidden; }
+  .services.horizontal .services-stage { grid-template-columns: minmax(300px, 34vw) 1fr; height: 100%; min-height: 0; }
+  .services-rail {
+    position: relative; z-index: 3;
+    display: flex; flex-direction: column;
+    padding: calc(var(--nav) + 4vh) 2.6vw 5vh;
+    border-bottom: 1px solid rgba(243,239,232,0.14);
+  }
+  .services.horizontal .services-rail { border-bottom: 0; border-right: 1px solid rgba(243,239,232,0.14); }
+  .services-rail h2 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.03em; line-height: 0.9; margin: 0; font-size: clamp(2.7rem, 4.2vw, 4.6rem); max-width: 8ch; }
+  .service-index { display: none; margin-top: auto; }
+  .services.horizontal .service-index { display: grid; }
+  .service-jump {
+    display: grid; grid-template-columns: 2.2rem 1fr; gap: 0.75rem; align-items: baseline;
+    width: 100%; text-align: left; color: rgba(243,239,232,0.42);
+    border-top: 1px solid rgba(243,239,232,0.16); padding: 0.85rem 0 0.7rem;
+  }
+  .service-jump em { font-family: var(--serif); font-style: normal; font-size: 1.2rem; }
+  .service-jump strong { font-family: var(--serif); font-weight: 500; font-size: clamp(1.35rem, 1.6vw, 1.7rem); }
+  .service-jump.is-on { color: var(--ivory); }
+  .service-blurb { display: none; margin: 0 0 1rem 3rem; color: rgba(243,239,232,0.78); font-size: 0.95rem; max-width: 36rem; }
+  .services.horizontal .service-jump.is-on + .service-blurb { display: block; }
+  .service-nav { display: flex; align-items: center; gap: 0.8rem; margin-top: 1.2rem; }
+  .services.horizontal .service-nav { margin-top: 1.4rem; }
+  .service-nav b { font-weight: 400; letter-spacing: 0.18em; font-size: 0.75rem; min-width: 4.5rem; }
+  .service-meter { flex: 1; height: 1px; background: rgba(243,239,232,0.18); }
+  .service-meter span { display: block; height: 100%; width: 100%; background: var(--sand); transform-origin: left center; transform: scaleX(0.333); }
+  .arrow {
+    width: 52px; height: 52px; border: 1px solid var(--line-light); color: var(--ivory);
+    display: grid; place-items: center; transition: background 0.3s ease, color 0.3s ease;
+  }
+  .arrow:hover { background: var(--ivory); color: var(--ink); }
+  .arrow svg { width: 22px; height: 22px; }
+  .services-viewport { position: relative; overflow: hidden; min-height: 78vh; }
+  .services.horizontal .services-viewport { min-height: 0; height: 100%; }
+  .services-track { display: flex; flex-direction: column; }
+  .services.horizontal .services-track { flex-direction: row; height: 100%; width: max-content; }
+  .panel { position: relative; min-height: 100vh; min-height: 100svh; width: 100%; overflow: hidden; background: #111; }
+  .services.horizontal .panel { height: 100%; min-height: 0; }
+  .panel-media { position: absolute; inset: 0; }
+  .panel-media img { width: 100%; height: 100%; object-fit: cover; }
+  .panel-veil {
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, rgba(22,19,17,0.55), transparent 22%),
+      linear-gradient(to top, rgba(22,19,17,0.55), transparent 42%);
+  }
+  .services.horizontal .panel-veil { background: linear-gradient(90deg, rgba(22,19,17,0.28), transparent 16%); }
+  .panel-num {
+    position: absolute; z-index: 2; right: 3vw; bottom: -0.08em; margin: 0; pointer-events: none;
+    font-family: var(--serif); font-size: clamp(6.5rem, 14vw, 13rem); line-height: 0.78;
+    color: transparent; -webkit-text-stroke: 1px rgba(243,239,232,0.62);
+  }
+  .panel-copy { position: absolute; z-index: 2; left: 6vw; right: 6vw; bottom: 7vh; max-width: 40rem; }
+  .services.horizontal .panel-copy { display: none; }
+  .panel-copy h3 {
+    margin: 0 0 0.8rem; font-family: var(--serif); font-weight: 500; font-size: clamp(2.2rem, 4vw, 3.2rem); letter-spacing: -0.02em;
+  }
+  .panel-copy p { margin: 0; max-width: 38rem; color: rgba(243,239,232,0.88); font-size: 0.98rem; }
+
+  .folio { background: #141210; color: var(--ivory); padding: calc(var(--nav) + 7vh) 0 8vh; overflow: hidden; }
+  .folio-head {
+    display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem;
+    margin: 0 4vw; padding-bottom: 2.5vh; border-bottom: 1px solid rgba(243,239,232,0.14);
+  }
+  .folio-head h2 { font-size: clamp(3.2rem, 6vw, 6rem); }
+  .folio-head p {
+    margin: 0; max-width: 22rem; font-family: var(--serif); font-style: italic;
+    font-size: clamp(1.3rem, 2vw, 1.8rem); line-height: 1.3; color: var(--sand);
+  }
+  .folio-nav { display: flex; gap: 0.7rem; }
+  .tilt-stage {
+    position: relative; height: min(70vh, 680px); margin-top: 2vh;
+    perspective: 1400px; touch-action: pan-y;
+  }
+  .folio-item {
+    position: absolute; left: 50%; top: 46%;
+    width: min(34vw, 460px); height: min(48vh, 500px);
+    padding: 0; border: 0; border-radius: 18px; overflow: hidden;
+    background: #2a2420; color: inherit; cursor: pointer;
+    box-shadow: 0 28px 60px rgba(0,0,0,0.38);
+    transform-origin: center center;
+  }
+  .folio-item img { width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+  .folio-active {
+    display: flex; gap: 1rem; align-items: baseline;
+    margin: 0.5rem auto 0; padding: 0 4vw; max-width: 46rem;
+    min-height: 4.5rem;
+  }
+  .folio-active b { font-family: var(--serif); font-weight: 500; font-size: 1.3rem; letter-spacing: 0.08em; }
+  .folio-active span { color: rgba(243,239,232,0.78); font-size: 1rem; }
+
+  .lightbox {
+    position: fixed; inset: 0; z-index: 90; background: var(--ink); color: var(--ivory);
+    display: grid; grid-template-columns: 1.4fr 0.7fr; align-items: center;
+  }
+  .lightbox[hidden] { display: none; }
+  .lightbox img { width: 100%; height: 100vh; height: 100svh; object-fit: cover; }
+  .lightbox figcaption { padding: 8vh 6vw; font-family: var(--serif); font-size: clamp(1.6rem, 2.4vw, 2.3rem); line-height: 1.25; }
+  .lightbox-close {
+    position: absolute; top: 1.4rem; right: 1.4rem; color: var(--ivory);
+    letter-spacing: 0.22em; text-transform: uppercase; font-size: 0.72rem;
+    border-bottom: 1px solid var(--sand); padding-bottom: 0.3rem;
+  }
+
+  .explore { background: #141210; color: var(--ivory); }
+  .explore-pin { position: relative; height: 100vh; height: 100svh; overflow: hidden; background: #141210; }
+  #explore-room { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .explore-shade {
+    position: absolute; inset: 0; pointer-events: none; z-index: 1;
+    background: linear-gradient(90deg, rgba(16,14,12,.66) 0%, rgba(16,14,12,.22) 30%, transparent 54%);
+  }
+  .explore-copy {
+    position: absolute; z-index: 2; left: clamp(20px, 5vw, 72px); bottom: clamp(36px, 7vh, 80px);
+    width: min(460px, 86vw); pointer-events: none;
+  }
+  .explore-kicker {
+    margin: 0.35rem 0 0; letter-spacing: 0.28em; text-transform: uppercase;
+    font-size: 0.72rem; color: var(--sand);
+  }
+  .explore-copy h2 {
+    font-family: var(--serif); font-weight: 500; letter-spacing: -0.03em;
+    font-size: clamp(2.4rem, 4.6vw, 4.4rem); line-height: 0.94; margin: 0.35rem 0 0.85rem;
+  }
+  .explore-copy .explore-body {
+    margin: 0; max-width: 42rem; color: rgba(243,239,232,.84);
+    font-size: 0.98rem; line-height: 1.55;
+  }
+  .explore-hint {
+    margin: 1rem 0 0; letter-spacing: 0.22em; text-transform: uppercase;
+    font-size: 0.68rem; color: var(--sand); transition: opacity 0.4s ease;
+  }
+  .explore-dots {
+    position: absolute; z-index: 2; right: clamp(16px, 3vw, 40px); top: 50%;
+    transform: translateY(-50%); display: flex; flex-direction: column; gap: 0.7rem;
+    margin: 0; padding: 0;
+  }
+  .explore-dots button {
+    appearance: none; background: transparent; color: rgba(243,239,232,.42);
+    border: 0; border-left: 1px solid rgba(243,239,232,.28);
+    padding: 0.15rem 0 0.15rem 0.75rem; text-align: left; cursor: pointer;
+    letter-spacing: 0.16em; text-transform: uppercase; font-size: 0.66rem;
+    font-family: inherit;
+  }
+  .explore-dots button.is-on { color: var(--ivory); border-left-color: var(--sand); }
+  .explore-bar { position: absolute; left: 0; right: 0; bottom: 0; height: 2px; z-index: 3; background: rgba(243,239,232,.16); }
+  .explore-bar span { display: block; height: 100%; width: 0; background: var(--sand); }
+  .explore-fallback { display: none; }
+  html.show-photo .explore-pin { display: none; }
+  html.show-photo .explore-fallback {
+    display: grid; gap: 2.4rem; padding: 10vh 6vw 8vh;
+  }
+  .explore-fallback article {
+    display: grid; grid-template-columns: minmax(180px, 280px) 1fr; gap: 1.4rem 2rem; align-items: start;
+  }
+  .explore-fallback img { width: 100%; height: 190px; object-fit: cover; }
+  .explore-fallback h3 {
+    font-family: var(--serif); font-weight: 500; font-size: clamp(1.8rem, 3vw, 2.4rem);
+    margin: 0 0 0.55rem; letter-spacing: -0.03em;
+  }
+  .explore-fallback p { margin: 0; color: rgba(243,239,232,.82); line-height: 1.55; }
+
+  .testimonials { position: relative; z-index: 1; background: #12100e; color: var(--ivory); }
+  .t-layout { display: grid; grid-template-columns: minmax(260px, 36vw) 1fr; min-height: 100vh; min-height: 100svh; }
+  .t-portrait { position: relative; overflow: hidden; min-height: 52vh; background: #1c1816; }
+  .t-portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; }
+  .t-portrait img.is-on { opacity: 1; }
+  .t-panel { display: flex; flex-direction: column; padding: calc(var(--nav) + 4vh) 4vw 6vh 4vw; }
+  .t-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 1rem; }
+  .t-head h2 { font-size: clamp(2.4rem, 4vw, 3.6rem); }
+  .t-controls { display: flex; gap: 0.7rem; }
+  .quotes { position: relative; flex: 1; display: grid; align-items: center; min-height: 42vh; }
+  .t-slide { display: none; }
+  .t-slide.is-active { display: block; }
+  .t-slide q {
+    display: block; font-family: var(--serif); font-style: italic; font-weight: 500;
+    font-size: clamp(1.45rem, 2.3vw, 2.15rem); line-height: 1.28; max-width: 38rem;
+  }
+  .t-slide q::before { content: "“"; display: block; font-size: 4.2rem; line-height: 0.8; color: var(--sand); margin-bottom: 0.4rem; }
+  .t-slide footer { margin-top: 1.6rem; display: flex; flex-direction: column; gap: 0.15rem; }
+  .t-slide strong { font-weight: 500; letter-spacing: 0.04em; }
+  .t-slide em { font-style: normal; color: var(--sand); font-size: 0.92rem; }
+  .t-index { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; border-top: 1px solid rgba(243,239,232,0.16); padding-top: 1.1rem; }
+  .t-name {
+    background: none; border: 0; color: rgba(243,239,232,0.42); text-align: left; padding: 0.35rem 0;
+    font-size: 0.82rem; letter-spacing: 0.04em;
+  }
+  .t-name em { font-family: var(--serif); font-style: normal; margin-right: 0.45rem; }
+  .t-name.is-on { color: var(--ivory); box-shadow: inset 0 -1px 0 var(--sand); }
+
+  .contact { position: relative; z-index: 4; background: var(--ivory); color: var(--espresso); }
+  .contact.is-stack {
+    border-radius: 1.6rem 1.6rem 0 0;
+    box-shadow: 0 -32px 70px rgba(12, 10, 8, 0.38);
+    overflow: hidden;
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 34vw) minmax(0, 1fr);
+    min-height: 100vh;
+    min-height: 100svh;
+    width: 100%;
+  }
+  .contact-photo { position: relative; min-height: 46vh; min-width: 0; overflow: hidden; }
+  .contact-photo img { width: 100%; height: 100%; object-fit: cover; }
+  .contact-body {
+    padding: calc(var(--nav) + 6vh) 5vw 8vh;
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 4vw;
+    align-items: start;
+  }
+  .contact h2 {
+    font-family: var(--serif); font-weight: 500; letter-spacing: -0.03em;
+    font-size: clamp(2.4rem, 3.6vw, 3.8rem); line-height: 0.95; margin: 0 0 1.2rem;
+  }
+  .contact .lead { font-family: var(--serif); font-style: italic; font-size: 1.25rem; line-height: 1.4; margin: 0; }
+  .contact-direct { margin-top: 2.4rem; display: grid; gap: 0.15rem; font-size: 0.95rem; }
+  .contact-direct p { margin: 0; }
+  .contact-direct a { border-bottom: 1px solid var(--espresso); width: max-content; }
+  .contact form {
+    display: grid; gap: 1.35rem;
+    border-left: 1px solid var(--line); padding-left: 4vw;
+  }
+  .contact .field { display: grid; gap: 0.4rem; }
+  .contact .field span, .contact legend {
+    font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--taupe);
+  }
+  .contact .field input, .contact .field textarea {
+    width: 100%; background: transparent; border: 0; border-bottom: 1px solid rgba(41,35,31,0.28);
+    padding: 0.65rem 0; border-radius: 0; outline: none; color: var(--espresso);
+  }
+  .contact .field textarea { min-height: 6.5rem; resize: vertical; }
+  .contact .field input:focus, .contact .field textarea:focus { border-bottom-color: var(--espresso); }
+  .service-picks { border: 0; margin: 0; padding: 0; display: grid; gap: 0.55rem; }
+  .service-picks legend { padding: 0; }
+  .service-picks label {
+    display: flex; align-items: center; gap: 0.7rem;
+    border-top: 1px solid var(--line); padding: 0.7rem 0 0; cursor: pointer;
+  }
+  .service-picks input { accent-color: var(--espresso); }
+  .contact .submit {
+    justify-self: start; margin-top: 0.4rem; color: var(--espresso);
+    display: inline-flex; align-items: center; gap: 0.8rem;
+    letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.75rem;
+    border-bottom: 1px solid var(--espresso); padding: 0.4rem 0 0.45rem; background: none;
+  }
+  .contact .submit i { display: inline-block; transition: transform 0.4s ease; font-style: normal; }
+  .contact .submit:hover i { transform: translateX(8px); }
+  .contact .form-note { min-height: 1.4em; margin: 0; color: var(--taupe); font-size: 0.92rem; }
+
+  .footer { background: var(--ink); color: var(--ivory); padding: 8vh 5vw 7.5rem; }
+  .footer-top {
+    display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    gap: 4vw 6vw; align-items: end; padding-bottom: 4.5vh;
+    border-bottom: 1px solid rgba(243, 239, 232, 0.14);
+  }
+  .footer .brand-name {
+    font-family: var(--serif); font-weight: 500; letter-spacing: -0.03em;
+    font-size: clamp(3rem, 5.4vw, 5.2rem); line-height: 0.88; margin: 0 0 1.1rem;
+  }
+  .footer .brand-name span { display: inline-block; transition: color 0.45s ease; }
+  .footer-brand:hover .brand-name span { color: var(--sand); }
+  .footer p { margin: 0; }
+  .footer .tag {
+    font-family: var(--serif); font-style: italic; font-weight: 500;
+    font-size: clamp(1.2rem, 1.8vw, 1.55rem); max-width: 18rem; line-height: 1.25;
+    color: rgba(243, 239, 232, 0.78);
+  }
+  .footer-nav { display: grid; }
+  .footer-nav a {
+    display: grid; grid-template-columns: 2.2rem 1fr auto; align-items: baseline; gap: 0.8rem;
+    padding: 0.72rem 0; border-top: 1px solid rgba(243, 239, 232, 0.14);
+    letter-spacing: 0.16em; text-transform: uppercase; font-size: 0.74rem;
+    transition: color 0.35s ease, padding-left 0.4s ease;
+  }
+  .footer-nav a:last-child { border-bottom: 1px solid rgba(243, 239, 232, 0.14); }
+  .footer-nav em { font-family: var(--serif); font-style: normal; font-size: 0.95rem; color: var(--sand); letter-spacing: 0; }
+  .footer-nav a span { position: relative; width: max-content; }
+  .footer-nav a span::after {
+    content: ""; position: absolute; left: 0; bottom: -0.18em; width: 100%; height: 1px;
+    background: var(--sand); transform: scaleX(0); transform-origin: left; transition: transform 0.45s ease;
+  }
+  .footer-nav a i { font-style: normal; opacity: 0; transform: translateX(-6px); transition: opacity 0.35s ease, transform 0.35s ease; }
+  .footer-nav a:hover, .footer-nav a:focus-visible { color: var(--sand); padding-left: 0.45rem; }
+  .footer-nav a:hover span::after, .footer-nav a:focus-visible span::after { transform: scaleX(1); }
+  .footer-nav a:hover i, .footer-nav a:focus-visible i { opacity: 1; transform: translateX(0); }
+  .footer-meta {
+    display: grid; grid-template-columns: minmax(0, 0.7fr) minmax(0, 1fr); gap: 3vw;
+    padding: 4vh 0 1vh;
+  }
+  .footer .eyebrow { color: var(--sand); margin-bottom: 0.85rem; }
+  .footer-meta p + p { margin-top: 0.2rem; }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin-top: 1.1rem; }
+  .footer-links a, .footer-phone {
+    position: relative; width: max-content; letter-spacing: 0.04em;
+  }
+  .footer-links a::after, .footer-phone::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: -0.12em; height: 1px;
+    background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;
+  }
+  .footer-links a:hover, .footer-phone:hover,
+  .footer-links a:focus-visible, .footer-phone:focus-visible { color: var(--sand); }
+  .footer-links a:hover::after, .footer-phone:hover::after,
+  .footer-links a:focus-visible::after, .footer-phone:focus-visible::after { transform: scaleX(1); }
+  .footer-base {
+    margin-top: 2vh; padding-top: 2vh; border-top: 1px solid rgba(243, 239, 232, 0.14);
+    display: flex; justify-content: space-between; gap: 1rem; align-items: center;
+    font-size: 0.78rem; letter-spacing: 0.08em; color: rgba(243, 239, 232, 0.62);
+  }
+  .to-top {
+    display: inline-flex; align-items: center; gap: 0.55rem;
+    letter-spacing: 0.2em; text-transform: uppercase; font-size: 0.7rem; color: var(--ivory);
+  }
+  .to-top i { font-style: normal; display: inline-block; transition: transform 0.4s ease; }
+  .to-top:hover, .to-top:focus-visible { color: var(--sand); }
+  .to-top:hover i, .to-top:focus-visible i { transform: translateY(-4px); }
+  .float-contact {
+    position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 72;
+    background: var(--ivory); color: var(--espresso);
+    letter-spacing: 0.18em; text-transform: uppercase; font-size: 0.72rem;
+    padding: 0.95rem 1.15rem; border: 1px solid var(--espresso);
+  }
+  .float-contact:hover { background: var(--espresso); color: var(--ivory); }
+
+  @media (max-width: 980px) {
+    .nav-links { display: none; }
+    .menu-btn { display: block; }
+    .about, .folio-head, .lightbox { grid-template-columns: 1fr; }
+    .footer-top, .footer-meta { grid-template-columns: 1fr; }
+    .contact-grid, .contact-body { grid-template-columns: minmax(0, 1fr); }
+    .contact-photo { height: 42vh; min-height: 0; }
+    .contact form { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); padding-top: 2rem; }
+    .about-visual { min-height: 78vh; }
+    .about-main { width: 80%; height: 70%; }
+    .about-float { width: min(210px, 46%); height: auto; }
+    .folio-head { flex-direction: column; align-items: flex-start; }
+    .folio-item { width: min(62vw, 300px); height: min(42vh, 360px); }
+    .t-layout { grid-template-columns: 1fr; }
+    .t-portrait { min-height: 42vh; }
+    .lightbox img { height: 48vh; }
+    .hero-meta { display: none; }
+    .explore-shade {
+      background: linear-gradient(180deg, rgba(16,14,12,.12) 0%, rgba(16,14,12,.18) 36%, rgba(16,14,12,.9) 100%);
+    }
+    .explore-dots {
+      top: calc(var(--nav) + 16px); right: 5vw; left: 5vw; transform: none;
+      flex-direction: row; flex-wrap: wrap; gap: 0.4rem 0.8rem;
+    }
+    .explore-fallback article { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .hero-copy h1 { font-size: clamp(1.85rem, 8vw, 2.6rem); }
+    .about-copy { padding: calc(var(--nav) + 4vh) 6vw 4vh; }
+    .about-small { display: none; }
+    .t-body { padding: 6vh 6vw 8vh; }
+    .footer-base { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+    .footer-meta, .footer-base { padding-right: 7rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation: none !important; transition: none !important;
+    }
+  }
+</style>
+</head>
+<body data-nav="clear">
+<div class="loader" id="loader" role="status" aria-label="Designing the interior">
+  <svg class="loader-sheet" viewBox="360 460 900 400" aria-hidden="true">
+    <rect class="ld-draw" x="400" y="490" width="820" height="330"></rect>
+    <path class="ld-draw" d="M470 530h250M860 530h300V800H470V530"></path>
+    <path class="ld-draw soft" d="M720 530v-18h140v18"></path>
+    <path class="ld-draw" d="M530 690h210v78H530z"></path>
+    <path class="ld-draw soft" d="M575 640h130v42H575z"></path>
+    <path class="ld-draw" d="M900 600h170v96H900z"></path>
+    <path class="ld-draw soft" d="M930 624h110M930 648h110M930 672h110"></path>
+    <circle class="ld-draw soft" cx="520" cy="590" r="22"></circle>
+    <path class="ld-draw soft" d="M430 800h40M1140 800v-36M470 820h690"></path>
+  </svg>
+  <div class="loader-foot">
+    <span id="loader-label">Designing the plan</span>
+    <span>Sheet 01</span>
+  </div>
+  <div class="loader-bar" aria-hidden="true"><span id="loader-bar"></span></div>
+</div>
+<a class="skip" href="#about">Skip to content</a>
+<div class="progress" aria-hidden="true"><span id="progress"></span></div>
+
+<header class="nav">
+  <a class="brand" href="#top">
+    <img src="assets/logo.png" alt="PREMIUM Interior Design" width="640" height="640">
+    <span>PREMIUM</span>
+  </a>
+  <nav aria-label="Primary">
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span></button>
+</header>
+<div class="menu-panel" id="menu" hidden>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<section class="hero" id="top" data-nav="clear">
+  <div class="hero-pin">
+    <canvas id="room" aria-hidden="true"></canvas>
+    <div class="blueprint" id="blueprint" aria-hidden="true">
+      <svg class="bp-frame" viewBox="0 0 1600 900">
+        <rect class="bp-draw" x="48" y="78" width="1504" height="774"></rect>
+        <rect class="bp-draw soft" x="62" y="92" width="1476" height="746"></rect>
+        <path class="bp-draw soft" d="M48 78h28M48 78v28M1552 78h-28M1552 78v28M48 852h28M48 852v-28M1552 852h-28M1552 852v-28"></path>
+        <g class="bp-label-plan">
+          <text class="bp-strong" x="1088" y="132">FLOOR PLAN</text>
+          <text x="1088" y="156">SHEET 01  ·  SCALE 1:50</text>
+        </g>
+        <g class="bp-label-elev" opacity="0">
+          <text class="bp-strong" x="1088" y="132">ELEVATION</text>
+          <text x="1088" y="156">SHEET 02  ·  NORTH WALL</text>
+        </g>
+      </svg>
+      <svg class="bp-plan" viewBox="400 500 800 360">
+        <path class="bp-draw" d="M470 530h250M860 530h300V800H470V530"></path>
+        <path class="bp-draw soft" d="M720 530v-18h140v18"></path>
+        <path class="bp-draw" d="M530 690h210v78H530z"></path>
+        <path class="bp-draw soft" d="M575 640h130v42H575z"></path>
+        <path class="bp-draw" d="M900 600h170v96H900z"></path>
+        <path class="bp-draw soft" d="M930 624h110M930 648h110M930 672h110"></path>
+        <circle class="bp-draw soft" cx="520" cy="590" r="22"></circle>
+        <path class="bp-draw soft" d="M430 800h40M1140 800v-36"></path>
+        <path class="bp-draw soft" d="M470 820h690M470 814v12M1160 814v12"></path>
+      </svg>
+      <svg class="bp-elev" viewBox="420 440 800 380">
+        <path class="bp-draw" d="M470 470h690v300H470z"></path>
+        <path class="bp-draw" d="M760 530h280v170H760z"></path>
+        <path class="bp-draw soft" d="M900 530v170M760 615h280"></path>
+        <path class="bp-draw soft" d="M520 690h180v80H520zM560 650h100v40H560z"></path>
+        <path class="bp-draw soft" d="M470 770h690"></path>
+      </svg>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/hero-match-b.jpg" alt="Interior" width="2000" height="1500">
+    </div>
+    <div class="hero-shade"></div>
+    <div class="hero-copy">
+      <h1><span>Where Every Detail</span><span>Counts, and Every</span><span>Space Tells Your Story</span></h1>
+      <a class="hero-cta" href="#contact">Contact Us</a>
+    </div>
+    <p class="scroll-hint"><i></i> Scroll</p>
+    <div class="hero-meta" aria-live="polite">
+      <b id="stage-index">01</b>
+      <span id="stage-name">Floor Plan</span>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about" data-nav="light">
+  <div class="about-copy">
+    <p class="eyebrow">About Us</p>
+    <h2 class="about-title">
+      <span class="line"><span>Discover The</span></span>
+      <span class="line"><span>Power Of Design</span></span>
+    </h2>
+    <p class="lead">We transform your vision into beautifully designed spaces that inspire and elevate everyday living</p>
+  </div>
+  <div class="about-visual" id="about-visual">
+    <div class="about-small"><img src="assets/about-3.jpg" alt="About 3" width="494" height="1064"></div>
+    <div class="about-main"><img src="assets/about-1.jpg" alt="About 1" width="494" height="1064"></div>
+    <div class="about-float"><img src="assets/about-4.jpg" alt="About 4" width="247" height="532"></div>
+  </div>
+</section>
+
+<section class="services" id="services" data-nav="dark">
+  <div class="services-pin">
+    <div class="services-stage">
+      <aside class="services-rail">
+        <p class="eyebrow">Services</p>
+        <h2>What We<br>Provide For You</h2>
+        <div class="service-index">
+          <button class="service-jump is-on" type="button" data-go="0"><em>01</em><strong>Interior Styling</strong></button>
+          <p class="service-blurb">Transform your space with our expert interior styling services. We specialize in creating harmonious, aesthetically pleasing environments that reflect your unique style and personality. Our team of skilled designers will work closely with you to select the perfect color schemes, furniture arrangements, and decorative elements that elevate your home or office to new heights of elegance and comfort.</p>
+          <button class="service-jump" type="button" data-go="1"><em>02</em><strong>Interior Design Residential</strong></button>
+          <p class="service-blurb">Experience the luxury of bespoke residential interior design with Premium Interior Design. We offer comprehensive services tailored to your lifestyle and preferences, from space planning and custom furniture design to material selection and lighting solutions. Our goal is to create a living space that not only looks stunning but also enhances your daily life and increases your property value.</p>
+          <button class="service-jump" type="button" data-go="2"><em>03</em><strong>Interior Design Commercial</strong></button>
+          <p class="service-blurb">Elevate your business environment with our professional commercial interior design services. We understand the unique challenges of commercial spaces and create designs that balance functionality, brand identity, and aesthetic appeal. From office layouts that boost productivity to retail spaces that enhance customer experience, we deliver innovative solutions that make a lasting impression on clients and employees alike.</p>
+        </div>
+        <div class="service-nav">
+          <b id="service-index">01 / 03</b>
+          <div class="service-meter" aria-hidden="true"><span id="service-meter"></span></div>
+          <button class="arrow" type="button" data-service="-1" aria-label="Previous service">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+          </button>
+          <button class="arrow" type="button" data-service="1" aria-label="Next service">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </aside>
+      <div class="services-viewport" id="services-viewport">
+        <div class="services-track" id="services-track">
+          <article class="panel" id="service-0">
+            <div class="panel-media"><img src="assets/styling-stock.jpg" alt="Our Services" width="1800" height="949"></div>
+            <div class="panel-veil"></div>
+            <p class="panel-num" aria-hidden="true">01</p>
+            <div class="panel-copy">
+              <h3>Interior Styling</h3>
+              <p>Transform your space with our expert interior styling services. We specialize in creating harmonious, aesthetically pleasing environments that reflect your unique style and personality. Our team of skilled designers will work closely with you to select the perfect color schemes, furniture arrangements, and decorative elements that elevate your home or office to new heights of elegance and comfort.</p>
+            </div>
+          </article>
+          <article class="panel" id="service-1">
+            <div class="panel-media"><img src="assets/living-2.jpg" alt="Interior" width="1600" height="720"></div>
+            <div class="panel-veil"></div>
+            <p class="panel-num" aria-hidden="true">02</p>
+            <div class="panel-copy">
+              <h3>Interior Design Residential</h3>
+              <p>Experience the luxury of bespoke residential interior design with Premium Interior Design. We offer comprehensive services tailored to your lifestyle and preferences, from space planning and custom furniture design to material selection and lighting solutions. Our goal is to create a living space that not only looks stunning but also enhances your daily life and increases your property value.</p>
+            </div>
+          </article>
+          <article class="panel" id="service-2">
+            <div class="panel-media"><img src="assets/tvunit.jpg" alt="Interior" width="1600" height="879"></div>
+            <div class="panel-veil"></div>
+            <p class="panel-num" aria-hidden="true">03</p>
+            <div class="panel-copy">
+              <h3>Interior Design Commercial</h3>
+              <p>Elevate your business environment with our professional commercial interior design services. We understand the unique challenges of commercial spaces and create designs that balance functionality, brand identity, and aesthetic appeal. From office layouts that boost productivity to retail spaces that enhance customer experience, we deliver innovative solutions that make a lasting impression on clients and employees alike.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="folio" id="portfolio" data-nav="dark">
+  <div class="folio-head">
+    <div>
+      <p class="eyebrow">Portfolio</p>
+      <h2>View Our<br>Design Projects</h2>
+    </div>
+    <p>Crafting Personalized Interiors That Reflect Your Unique Style and Spirit</p>
+    <div class="folio-nav">
+      <button class="arrow" type="button" data-folio="-1" aria-label="Previous project">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+      </button>
+      <button class="arrow" type="button" data-folio="1" aria-label="Next project">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="tilt-stage" id="tilt-stage">
+    <button class="folio-item" type="button" data-full="assets/bedroom.jpg" data-cap="Transforming Ordinary Spaces into Extraordinary Living Environments">
+      <img src="assets/bedroom.jpg" alt="Transforming Ordinary Spaces into Extraordinary Living Environments" width="1800" height="810">
+    </button>
+    <button class="folio-item" type="button" data-full="assets/living.jpg" data-cap="Transforming Your Space with Thoughtful Design and Timeless Elegance">
+      <img src="assets/living.jpg" alt="Transforming Your Space with Thoughtful Design and Timeless Elegance" width="1800" height="810">
+    </button>
+    <button class="folio-item" type="button" data-full="assets/entrance.jpg" data-cap="Creating Stunning, Functional Environments That Reflect Your Lifestyle and Taste">
+      <img src="assets/entrance.jpg" alt="Creating Stunning, Functional Environments That Reflect Your Lifestyle and Taste" width="1600" height="1122">
+    </button>
+    <button class="folio-item" type="button" data-full="assets/detail.jpg" data-cap="Bringing Your Unique Vision to Life with Personalized, High-Quality Interiors">
+      <img src="assets/detail.jpg" alt="Bringing Your Unique Vision to Life with Personalized, High-Quality Interiors" width="960" height="1280">
+    </button>
+  </div>
+  <p class="folio-active" id="folio-active"><b>01</b><span>Transforming Ordinary Spaces into Extraordinary Living Environments</span></p>
+</section>
+
+<section class="explore" id="explore" data-nav="dark">
+  <div class="explore-pin" id="explore-pin">
+    <canvas id="explore-room" aria-label="Walk through three interiors: styling, residential, and commercial"></canvas>
+    <div class="explore-shade"></div>
+    <div class="explore-copy" aria-live="polite">
+      <p class="eyebrow">Our Services</p>
+      <p class="explore-kicker" id="explore-kicker">01</p>
+      <h2 id="explore-title">Interior Styling</h2>
+      <p class="explore-body" id="explore-text">Transform your space with our expert interior styling services. We specialize in creating harmonious, aesthetically pleasing environments that reflect your unique style and personality. Our team of skilled designers will work closely with you to select the perfect color schemes, furniture arrangements, and decorative elements that elevate your home or office to new heights of elegance and comfort.</p>
+      <p class="explore-hint" id="explore-hint">Scroll to walk through</p>
+    </div>
+    <div class="explore-dots" id="explore-dots">
+      <button type="button" class="is-on" data-stop="0" aria-pressed="true">01 Styling</button>
+      <button type="button" data-stop="1" aria-pressed="false">02 Residential</button>
+      <button type="button" data-stop="2" aria-pressed="false">03 Commercial</button>
+    </div>
+    <div class="explore-bar" aria-hidden="true"><span id="explore-bar"></span></div>
+  </div>
+  <div class="explore-fallback">
+    <p class="eyebrow">Our Services</p>
+    <article>
+      <img src="assets/styling-stock.jpg" alt="Our Services" width="900" height="475">
+      <div>
+        <h3>Interior Styling</h3>
+        <p>Transform your space with our expert interior styling services. We specialize in creating harmonious, aesthetically pleasing environments that reflect your unique style and personality. Our team of skilled designers will work closely with you to select the perfect color schemes, furniture arrangements, and decorative elements that elevate your home or office to new heights of elegance and comfort.</p>
+      </div>
+    </article>
+    <article>
+      <img src="assets/living-2.jpg" alt="Interior" width="900" height="405">
+      <div>
+        <h3>Interior Design Residential</h3>
+        <p>Experience the luxury of bespoke residential interior design with Premium Interior Design. We offer comprehensive services tailored to your lifestyle and preferences, from space planning and custom furniture design to material selection and lighting solutions. Our goal is to create a living space that not only looks stunning but also enhances your daily life and increases your property value.</p>
+      </div>
+    </article>
+    <article>
+      <img src="assets/tvunit.jpg" alt="Interior" width="900" height="494">
+      <div>
+        <h3>Interior Design Commercial</h3>
+        <p>Elevate your business environment with our professional commercial interior design services. We understand the unique challenges of commercial spaces and create designs that balance functionality, brand identity, and aesthetic appeal. From office layouts that boost productivity to retail spaces that enhance customer experience, we deliver innovative solutions that make a lasting impression on clients and employees alike.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="testimonials" id="testimonials" data-nav="dark">
+  <div class="t-layout">
+    <div class="t-portrait" id="t-portrait">
+      <img class="is-on" src="assets/t-living.jpg" alt="Sunlit living room with a timber table and gallery wall" width="1100" height="1700">
+      <img src="assets/t-office.jpg" alt="Bright office lounge with tailored seating" width="1100" height="1700">
+      <img src="assets/t-kitchen.jpg" alt="White kitchen with a marble island" width="1100" height="1700">
+      <img src="assets/t-suite.jpg" alt="Open living and kitchen with a stone fireplace" width="1100" height="1700" style="object-position:center 30%">
+      <img src="assets/t-bedroom.jpg" alt="Tailored bedroom with a channel-tufted bed" width="1100" height="1700">
+    </div>
+    <div class="t-panel">
+      <div class="t-head">
+        <div>
+          <p class="eyebrow">Testimonials</p>
+          <h2>What Our<br>Clients Say</h2>
+        </div>
+        <div class="t-controls">
+          <button class="arrow" type="button" id="t-prev" aria-label="Previous testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+          </button>
+          <button class="arrow" type="button" id="t-next" aria-label="Next testimonial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="quotes" id="quotes">
+        <article class="t-slide is-active">
+          <blockquote><q>We had a vision for our dream home, and Premium Interior Designs brought it to life beyond our expectations! The attention to detail, color combinations, and space utilization were simply amazing. Our house now looks straight out of a magazine! Thank you for making our dream a reality.</q></blockquote>
+          <footer><strong>Amit &amp; Neha Sharma</strong><em>Mumbai</em></footer>
+        </article>
+        <article class="t-slide">
+          <blockquote><q>Our office needed a complete makeover, and Premium Interior Designs delivered an outstanding transformation. The team understood our brand identity and created a workspace that is both elegant and functional. The design not only enhances productivity but also impresses our clients. Highly recommend their services!</q></blockquote>
+          <footer><strong>Rohit Mehta</strong><em>CEO, TechVibe Solutions, Pune</em></footer>
+        </article>
+        <article class="t-slide">
+          <blockquote><q>I always wanted a kitchen that was both stylish and practical. Premium Interior Designs designed a modular kitchen that exceeded my expectations! The storage solutions, lighting, and overall aesthetics have completely changed the way I cook and entertain. I absolutely love it!</q></blockquote>
+          <footer><strong>Pooja Agarwal</strong><em>Navi Mumbai</em></footer>
+        </article>
+        <article class="t-slide">
+          <blockquote><q>I was worried about going over budget, but the team at Premium Interior Designs worked within my price range without compromising on quality. They helped me choose the right materials and designs that looked premium yet cost-effective. My home looks stunning, and I couldn't be happier!</q></blockquote>
+          <footer><strong>Rajesh Verma</strong><em>Pune</em></footer>
+        </article>
+        <article class="t-slide">
+          <blockquote><q>From concept to execution, Premium Interior Designs handled everything seamlessly. The team was professional, responsive, and ensured the project was completed on time. I never had to worry about a thing. If you're looking for stress-free interiors with top-notch quality, this is the place to go!</q></blockquote>
+          <footer><strong>Shruti &amp; Ankit Malhotra</strong><em>Panvel</em></footer>
+        </article>
+      </div>
+      <div class="t-index" id="t-index">
+        <button class="t-name is-on" type="button" data-t="0"><em>01</em>Amit &amp; Neha Sharma</button>
+        <button class="t-name" type="button" data-t="1"><em>02</em>Rohit Mehta</button>
+        <button class="t-name" type="button" data-t="2"><em>03</em>Pooja Agarwal</button>
+        <button class="t-name" type="button" data-t="3"><em>04</em>Rajesh Verma</button>
+        <button class="t-name" type="button" data-t="4"><em>05</em>Shruti &amp; Ankit Malhotra</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" data-nav="light">
+  <div class="contact-grid">
+    <div class="contact-photo">
+      <img src="assets/contact.jpg" alt="Interior design showcase" width="1210" height="1102">
+    </div>
+    <div class="contact-body">
+      <div>
+        <p class="eyebrow">Contact Us</p>
+        <h2>Connect with Us to Bring Your Interior Design Vision to Life</h2>
+        <p class="lead">We're here to listen, collaborate, and create. Reach out to start your journey towards a beautifully crafted space tailored just for you.</p>
+        <div class="contact-direct">
+          <p>Vikas Satre</p>
+          <p>2 Chandrakauns</p>
+          <p>Plot No 220/221 Sector 04</p>
+          <p>New Panvel, MAHARASHTRA 410206</p>
+          <p>India</p>
+          <p><a href="tel:+919082973329">+91 908 297 3329</a></p>
+        </div>
+      </div>
+      <form id="contact-form" novalidate>
+        <label class="field"><span>Name</span><input name="name" type="text" autocomplete="name" required></label>
+        <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email" required></label>
+        <label class="field"><span>Phone</span><input name="phone" type="tel" autocomplete="tel" required></label>
+        <fieldset class="service-picks">
+          <legend>Service interested in</legend>
+          <label><input type="radio" name="service" value="Interior Styling" required> Interior Styling</label>
+          <label><input type="radio" name="service" value="Interior Design Residential"> Interior Design Residential</label>
+          <label><input type="radio" name="service" value="Interior Design Commercial"> Interior Design Commercial</label>
+        </fieldset>
+        <label class="field"><span>Message</span><textarea name="message" required></textarea></label>
+        <button class="submit" type="submit">Contact Us <i aria-hidden="true">→</i></button>
+        <p class="form-note" id="form-note" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="footer" data-nav="dark">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <p class="brand-name">PREMIUM<br><span>Interior Design</span></p>
+      <p class="tag">Where Every Detail Counts, and Every Space Tells Your Story</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#about"><em>01</em><span>About</span><i aria-hidden="true">→</i></a>
+      <a href="#services"><em>02</em><span>Services</span><i aria-hidden="true">→</i></a>
+      <a href="#portfolio"><em>03</em><span>Portfolio</span><i aria-hidden="true">→</i></a>
+      <a href="#testimonials"><em>04</em><span>Testimonials</span><i aria-hidden="true">→</i></a>
+      <a href="#contact"><em>05</em><span>Contact</span><i aria-hidden="true">→</i></a>
+    </nav>
+  </div>
+  <div class="footer-meta">
+    <div>
+      <p class="eyebrow">Contact Person</p>
+      <p>Vikas Satre</p>
+      <p><a class="footer-phone" href="tel:+919082973329">+91 908 297 3329</a></p>
+      <div class="footer-links">
+        <a href="https://youtube.com/@interiorandmanymore6683" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.instagram.com/premiuminteriordesigner" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow">Address</p>
+      <p>2 Chandrakauns</p>
+      <p>Plot No 220/221 Sector 04</p>
+      <p>New Panvel, MAHARASHTRA 410206</p>
+      <p>India</p>
+    </div>
+  </div>
+  <div class="footer-base">
+    <p>©2024 PREMIUM. All rights reserved</p>
+    <button class="to-top" type="button" id="to-top">Back to top <i aria-hidden="true">↑</i></button>
+  </div>
+</footer>
+
+<a class="float-contact" href="#contact">Contact</a>
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" type="button" id="lightbox-close">Close</button>
+  <img id="lightbox-img" alt="">
+  <figcaption id="lightbox-cap"></figcaption>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script>
+(function () {
+  var root = document.documentElement;
+  var reduced = root.classList.contains("reduced");
+  var fine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+  function webglOk() {
+    try {
+      var c = document.createElement("canvas");
+      return !!(c.getContext("webgl2") || c.getContext("webgl"));
+    } catch (e) {
+      return false;
+    }
+  }
+
+  if (reduced || !webglOk() || typeof THREE === "undefined") root.classList.add("show-photo");
+  if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
+    var stuck = document.getElementById("loader");
+    if (stuck) stuck.remove();
+    return;
+  }
+
+  gsap.registerPlugin(ScrollTrigger);
+  var lenis = null;
+  if (!reduced && typeof Lenis !== "undefined") {
+    lenis = new Lenis({ lerp: 0.085, smoothWheel: true });
+    lenis.on("scroll", ScrollTrigger.update);
+    gsap.ticker.add(function (time) { lenis.raf(time * 1000); });
+    gsap.ticker.lagSmoothing(0);
+  }
+
+  function initLoader() {
+    var loader = document.getElementById("loader");
+    if (!loader) return;
+    var reduceMotion = reduced || window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduceMotion) {
+      loader.remove();
+      return;
+    }
+    root.classList.add("is-loading");
+    if (lenis) lenis.stop();
+    var heroST = ScrollTrigger.getAll().find(function (t) {
+      return t.pin && t.trigger && t.trigger.id === "top";
+    });
+    if (heroST) heroST.disable(false);
+    gsap.set(".hero-copy", { autoAlpha: 0, y: 24 });
+    var label = document.getElementById("loader-label");
+    var intro = gsap.timeline({
+      onComplete: function () {
+        root.classList.remove("is-loading");
+        if (heroST) heroST.enable();
+        if (lenis) lenis.start();
+        loader.remove();
+        gsap.set(".hero-copy", { autoAlpha: 1, y: 0 });
+      }
+    });
+    intro.to(".ld-draw", { strokeDashoffset: 0, duration: 1.7, stagger: 0.07, ease: "power1.inOut" }, 0);
+    intro.to("#loader-bar", { width: "100%", duration: 2.15, ease: "none" }, 0);
+    intro.call(function () { if (label) label.textContent = "Placing the rooms"; }, null, 0.85);
+    intro.to("#loader", { yPercent: -100, duration: 0.95, ease: "power3.inOut" }, 2.25);
+    intro.to(".hero-copy", { autoAlpha: 1, y: 0, duration: 0.75, ease: "power2.out" }, 2.55);
+  }
+
+  function scrollToEl(target) {
+    if (lenis) lenis.scrollTo(target, { offset: 0, duration: 1.15 });
+    else target.scrollIntoView({ behavior: reduced ? "auto" : "smooth" });
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      var id = a.getAttribute("href");
+      if (!id || id.length < 2) return;
+      var el = document.querySelector(id);
+      if (!el) return;
+      e.preventDefault();
+      closeMenu();
+      scrollToEl(el);
+    });
+  });
+
+  var menu = document.getElementById("menu");
+  var menuBtn = document.querySelector(".menu-btn");
+  function closeMenu() {
+    menu.classList.remove("open");
+    menu.hidden = true;
+    menuBtn.setAttribute("aria-expanded", "false");
+    menuBtn.setAttribute("aria-label", "Open menu");
+    if (lenis) lenis.start();
+  }
+  menuBtn.addEventListener("click", function () {
+    var open = menu.classList.toggle("open");
+    menu.hidden = !open;
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    if (lenis) { if (open) lenis.stop(); else lenis.start(); }
+  });
+
+  document.getElementById("to-top").addEventListener("click", function () {
+    if (lenis) lenis.scrollTo(0, { duration: 1.2 });
+    else window.scrollTo({ top: 0, behavior: reduced ? "auto" : "smooth" });
+  });
+
+  ScrollTrigger.create({
+    start: 0,
+    end: "max",
+    onUpdate: function (self) {
+      document.getElementById("progress").style.transform = "scaleX(" + self.progress + ")";
+    }
+  });
+
+  document.querySelectorAll("[data-nav]").forEach(function (section) {
+    ScrollTrigger.create({
+      trigger: section,
+      start: "top 42%",
+      end: "bottom 42%",
+      onToggle: function (self) {
+        if (self.isActive) document.body.dataset.nav = section.dataset.nav;
+      }
+    });
+  });
+
+  if (!root.classList.contains("show-photo")) initRoom();
+  initLoader();
+  initAbout();
+  initServices();
+  initPortfolio();
+  initExplore();
+  initTestimonials();
+  initContactStack();
+  initForm();
+  window.addEventListener("load", function () { ScrollTrigger.refresh(); });
+
+  function initRoom() {
+    var canvas = document.getElementById("room");
+    var mobile = window.matchMedia("(max-width: 800px)").matches;
+    var renderer;
+    try {
+      renderer = new THREE.WebGLRenderer({
+        canvas: canvas,
+        antialias: !mobile,
+        alpha: false,
+        powerPreference: "high-performance"
+      });
+    } catch (err) {
+      root.classList.add("show-photo");
+      return;
+    }
+    renderer.setClearColor(0xC9BBA8, 1);
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.18;
+    renderer.shadowMap.enabled = !mobile;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+    var scene = new THREE.Scene();
+    scene.fog = new THREE.Fog(0xD5CBBE, 16, 32);
+    var camera = new THREE.PerspectiveCamera(30, 1, 0.1, 40);
+    var cam = { x: 1.4, y: 2.15, z: 6.4, tx: 0, ty: 0.35, tz: -0.6 };
+    function applyCam() {
+      camera.position.set(cam.x, cam.y, cam.z);
+      camera.lookAt(cam.tx, cam.ty, cam.tz);
+    }
+    applyCam();
+
+    function woodTex() {
+      var c = document.createElement("canvas");
+      c.width = 1024; c.height = 1024;
+      var g = c.getContext("2d");
+      var boards = 8;
+      var bh = 1024 / boards;
+      for (var b = 0; b < boards; b++) {
+        var tone = 92 + (b % 3) * 14 + Math.random() * 10;
+        g.fillStyle = "rgb(" + (tone + 28) + "," + (tone - 8) + "," + (tone - 32) + ")";
+        g.fillRect(0, b * bh, 1024, bh - 2);
+        g.fillStyle = "rgba(40,18,8,0.35)";
+        g.fillRect(0, b * bh + bh - 3, 1024, 3);
+        for (var n = 0; n < 18; n++) {
+          g.strokeStyle = "rgba(55,24,10," + (0.08 + Math.random() * 0.18) + ")";
+          g.lineWidth = 0.6 + Math.random();
+          var yy = b * bh + 6 + n * (bh / 20);
+          g.beginPath();
+          g.moveTo(0, yy);
+          g.bezierCurveTo(240, yy + Math.random() * 6 - 3, 640, yy + Math.random() * 8 - 4, 1024, yy);
+          g.stroke();
+        }
+        if (b % 2 === 0) {
+          g.fillStyle = "rgba(30,12,6,0.18)";
+          g.fillRect(180 + b * 40, b * bh, 3, bh);
+        }
+      }
+      var t = new THREE.CanvasTexture(c);
+      t.wrapS = t.wrapT = THREE.RepeatWrapping;
+      t.repeat.set(3.2, 2.6);
+      t.colorSpace = THREE.SRGBColorSpace;
+      t.anisotropy = 8;
+      return t;
+    }
+    function weaveTex() {
+      var c = document.createElement("canvas");
+      c.width = 256; c.height = 256;
+      var g = c.getContext("2d");
+      g.fillStyle = "#C9BBA4";
+      g.fillRect(0, 0, 256, 256);
+      for (var i = 0; i < 256; i += 4) {
+        g.fillStyle = i % 8 === 0 ? "rgba(90,70,50,0.18)" : "rgba(255,248,236,0.12)";
+        g.fillRect(0, i, 256, 2);
+        g.fillRect(i, 0, 2, 256);
+      }
+      var t = new THREE.CanvasTexture(c);
+      t.wrapS = t.wrapT = THREE.RepeatWrapping;
+      t.repeat.set(3, 2);
+      t.colorSpace = THREE.SRGBColorSpace;
+      return t;
+    }
+    function stoneTex() {
+      var c = document.createElement("canvas");
+      c.width = 256; c.height = 256;
+      var g = c.getContext("2d");
+      g.fillStyle = "#E7E1D6";
+      g.fillRect(0, 0, 256, 256);
+      for (var i = 0; i < 1400; i++) {
+        g.fillStyle = "rgba(120,108,96," + (Math.random() * 0.15) + ")";
+        g.fillRect(Math.random() * 256, Math.random() * 256, 2, 2);
+      }
+      var t = new THREE.CanvasTexture(c);
+      t.wrapS = t.wrapT = THREE.RepeatWrapping;
+      t.repeat.set(2, 2);
+      t.colorSpace = THREE.SRGBColorSpace;
+      return t;
+    }
+
+    var wood = woodTex();
+    var weave = weaveTex();
+    var stone = stoneTex();
+    var plaster = new THREE.MeshStandardMaterial({ color: 0xF6F1E8, roughness: 0.86, metalness: 0, map: stone });
+    var concrete = new THREE.MeshStandardMaterial({ color: 0xE4DDD4, roughness: 0.9, metalness: 0 });
+    var floorMat = new THREE.MeshStandardMaterial({ color: 0x8A5A3C, roughness: 0.72, metalness: 0.02, map: wood });
+    var floorFinishMat = new THREE.MeshStandardMaterial({
+      color: 0xffffff, map: wood, roughness: 0.42, metalness: 0.06,
+      transparent: true, opacity: 1
+    });
+    var fabric = new THREE.MeshStandardMaterial({ color: 0xE7E0D6, roughness: 0.86 });
+    var navy = new THREE.MeshStandardMaterial({ color: 0x2A3848, roughness: 0.84 });
+    var leather = new THREE.MeshStandardMaterial({ color: 0x8C5A38, roughness: 0.58, metalness: 0.08 });
+    var black = new THREE.MeshStandardMaterial({ color: 0x1A1816, roughness: 0.38, metalness: 0.35 });
+    var woodSolid = new THREE.MeshStandardMaterial({ color: 0xffffff, map: wood, roughness: 0.48, metalness: 0.05 });
+    var metal = new THREE.MeshStandardMaterial({ color: 0xD7C4A4, roughness: 0.22, metalness: 0.9 });
+    var glassMat = new THREE.MeshPhysicalMaterial({
+      color: 0xE7F0F4, transparent: true, opacity: 0, roughness: 0.04, metalness: 0,
+      transmission: 0.2, thickness: 0.2, side: THREE.DoubleSide, depthWrite: false
+    });
+    var lineMat = new THREE.LineBasicMaterial({ color: 0x2A211C, transparent: true, opacity: 0.28 });
+
+    function add(parent, mesh) {
+      mesh.castShadow = !mobile;
+      mesh.receiveShadow = true;
+      parent.add(mesh);
+      return mesh;
+    }
+    function box(parent, w, h, d, mat, x, y, z) {
+      var m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
+      m.position.set(x, y, z);
+      return add(parent, m);
+    }
+    function riser(parent, w, h, d, mat, x, z) {
+      var geo = new THREE.BoxGeometry(w, h, d);
+      geo.translate(0, h / 2, 0);
+      var m = new THREE.Mesh(geo, mat);
+      m.position.set(x, 0, z);
+      m.scale.y = 0.001;
+      return add(parent, m);
+    }
+
+    var foundation = new THREE.Group();
+    scene.add(foundation);
+    var floor = new THREE.Mesh(new THREE.PlaneGeometry(9, 8), floorMat);
+    floor.rotation.x = -Math.PI / 2;
+    floor.receiveShadow = true;
+    foundation.add(floor);
+    var floorFinish = new THREE.Mesh(new THREE.PlaneGeometry(9, 8), floorFinishMat);
+    floorFinish.rotation.x = -Math.PI / 2;
+    floorFinish.position.y = 0.008;
+    foundation.add(floorFinish);
+    var pts = [];
+    var y = 0.02;
+    for (var gx = -4; gx <= 4; gx++) pts.push(new THREE.Vector3(gx, y, -4), new THREE.Vector3(gx, y, 4));
+    for (var gz = -4; gz <= 4; gz++) pts.push(new THREE.Vector3(-4.5, y, gz), new THREE.Vector3(4.5, y, gz));
+    var grid = new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(pts), lineMat);
+    foundation.add(grid);
+    foundation.scale.set(0.4, 1, 0.4);
+    var floorEdge = new THREE.LineSegments(new THREE.EdgesGeometry(floor.geometry), lineMat);
+    floorEdge.rotation.x = -Math.PI / 2;
+    floorEdge.position.y = 0.03;
+    foundation.add(floorEdge);
+
+    var wallL = riser(scene, 0.16, 3.05, 8, concrete, -4.5, 0);
+    var wallB = riser(scene, 9, 3.05, 0.16, plaster, 0, -4);
+    [wallL, wallB].forEach(function (wall) {
+      wall.add(new THREE.LineSegments(new THREE.EdgesGeometry(wall.geometry), lineMat));
+    });
+    var risers = [wallL, wallB];
+    var slatCount = mobile ? 4 : 7;
+    for (var s = 0; s < slatCount; s++) {
+      risers.push(riser(scene, 0.06, 3.05, 0.28, black, -3.15 + s * 0.12, -3.72));
+    }
+    var win = new THREE.Group();
+    scene.add(win);
+    var header = riser(win, 0.1, 0.22, 6.4, black, 0, 0);
+    header.position.y = 2.55;
+    header.scale.y = 0.001;
+    var sill = riser(win, 0.16, 0.1, 6.4, black, 0, 0);
+    sill.position.y = 0.28;
+    sill.scale.y = 0.001;
+    win.position.set(4.42, 0, 0.2);
+    var mullions = [];
+    var cols = mobile ? 4 : 6;
+    for (var c = 0; c < cols; c++) {
+      var bar = riser(win, 0.045, 2.15, 0.05, black, 0, -3 + c * (6 / (cols - 1)));
+      bar.position.y = 0.4;
+      mullions.push(bar);
+    }
+    for (var r = 0; r < 3; r++) {
+      var rail = box(win, 0.04, 0.04, 6.3, black, 0, 0.85 + r * 0.7, 0);
+      rail.scale.z = 0.001;
+      mullions.push(rail);
+    }
+    var glass = new THREE.Mesh(new THREE.PlaneGeometry(6.2, 2.15), glassMat);
+    glass.rotation.y = -Math.PI / 2;
+    glass.position.set(-0.02, 1.5, 0);
+    win.add(glass);
+    var ceiling = box(scene, 9, 0.08, 8, plaster, 0, 3.12, 0);
+    ceiling.material = plaster.clone();
+    ceiling.material.transparent = true;
+    ceiling.material.opacity = 0;
+    var baseL = riser(scene, 0.08, 0.1, 7.7, black, -4.32, 0);
+    var baseB = riser(scene, 8.6, 0.1, 0.08, black, 0, -3.84);
+
+    var sofa = new THREE.Group();
+    scene.add(sofa);
+    function cushion(parent, w, h, d, rad, mat, x, y, z) {
+      var shape = new THREE.Shape();
+      var rr = Math.min(rad, w * 0.22, h * 0.22);
+      shape.moveTo(-w / 2 + rr, -h / 2);
+      shape.lineTo(w / 2 - rr, -h / 2);
+      shape.absarc(w / 2 - rr, -h / 2 + rr, rr, -Math.PI / 2, 0, false);
+      shape.lineTo(w / 2, h / 2 - rr);
+      shape.absarc(w / 2 - rr, h / 2 - rr, rr, 0, Math.PI / 2, false);
+      shape.lineTo(-w / 2 + rr, h / 2);
+      shape.absarc(-w / 2 + rr, h / 2 - rr, rr, Math.PI / 2, Math.PI, false);
+      shape.lineTo(-w / 2, -h / 2 + rr);
+      shape.absarc(-w / 2 + rr, -h / 2 + rr, rr, Math.PI, Math.PI * 1.5, false);
+      var geo = new THREE.ExtrudeGeometry(shape, {
+        depth: d,
+        bevelEnabled: true,
+        bevelThickness: 0.025,
+        bevelSize: 0.02,
+        bevelSegments: mobile ? 1 : 2,
+        curveSegments: mobile ? 3 : 6
+      });
+      geo.translate(0, 0, -d / 2);
+      var mesh = new THREE.Mesh(geo, mat);
+      mesh.position.set(x, y, z);
+      mesh.castShadow = !mobile;
+      mesh.receiveShadow = true;
+      parent.add(mesh);
+      return mesh;
+    }
+    var baseMat = new THREE.MeshStandardMaterial({ color: 0xCFC6BA, roughness: 0.94 });
+    cushion(sofa, 2.5, 0.16, 0.9, 0.04, baseMat, 0, 0.18, 0);
+    [[-1.05, -0.32], [1.05, -0.32], [-1.05, 0.34], [1.05, 0.34]].forEach(function (p) {
+      var leg = new THREE.Mesh(new THREE.CylinderGeometry(0.028, 0.034, 0.1, 8), black);
+      leg.position.set(p[0], 0.05, p[1]);
+      sofa.add(leg);
+    });
+    [-0.78, 0, 0.78].forEach(function (x) {
+      cushion(sofa, 0.76, 0.16, 0.78, 0.05, fabric, x, 0.34, 0.04);
+      var back = cushion(sofa, 0.74, 0.46, 0.16, 0.05, fabric, x, 0.66, -0.32);
+      back.rotation.x = -0.14;
+    });
+    cushion(sofa, 0.18, 0.38, 0.82, 0.05, fabric, -1.24, 0.42, 0);
+    cushion(sofa, 0.18, 0.38, 0.82, 0.05, fabric, 1.24, 0.42, 0);
+    var p1 = cushion(sofa, 0.36, 0.3, 0.1, 0.04, navy, -0.42, 0.52, 0.1);
+    p1.rotation.z = 0.18;
+    p1.rotation.y = 0.2;
+    var p2 = cushion(sofa, 0.32, 0.26, 0.09, 0.04, leather, 0.18, 0.5, 0.14);
+    p2.rotation.z = -0.12;
+    var p3 = cushion(sofa, 0.3, 0.24, 0.08, 0.04, fabric, 0.62, 0.5, 0.08);
+    p3.rotation.z = 0.08;
+    sofa.rotation.y = -0.18;
+    sofa.position.set(0.15, -6, 0.55);
+
+    function drum(x, z) {
+      var g = new THREE.Group();
+      var top = new THREE.Mesh(new THREE.CylinderGeometry(0.36, 0.34, 0.4, 28), woodSolid);
+      top.position.y = 0.2;
+      top.castShadow = !mobile;
+      top.receiveShadow = true;
+      g.add(top);
+      scene.add(g);
+      g.position.set(x, -6, z);
+      return g;
+    }
+    var drumA = drum(-0.85, 2.7);
+    var drumB = drum(0.55, 2.95);
+
+    var dining = new THREE.Group();
+    scene.add(dining);
+    box(dining, 1.55, 0.06, 0.82, woodSolid, 0, 0.76, 0);
+    [[-0.68, -0.32], [0.68, -0.32], [-0.68, 0.32], [0.68, 0.32]].forEach(function (p) {
+      box(dining, 0.05, 0.72, 0.05, black, p[0], 0.36, p[1]);
+    });
+    if (!mobile) {
+      [[-0.95, 0], [0.95, 0], [0, -0.62], [0, 0.62]].forEach(function (p) {
+        box(dining, 0.42, 0.06, 0.42, black, p[0], 0.48, p[1]);
+        box(dining, 0.42, 0.46, 0.05, black, p[0], 0.74, p[1] + (p[1] < 0 ? -0.18 : p[1] > 0 ? 0.18 : 0));
+      });
+    }
+    var shade = new THREE.Mesh(new THREE.CylinderGeometry(0.18, 0.28, 0.22, 20), black);
+    shade.position.set(0, 2.15, 0);
+    shade.castShadow = !mobile;
+    dining.add(shade);
+    box(dining, 0.015, 0.7, 0.015, metal, 0, 2.55, 0);
+    dining.position.set(2.2, -6, -1.45);
+
+    var cabinet = new THREE.Group();
+    scene.add(cabinet);
+    box(cabinet, 1.7, 0.72, 0.42, black, 0, 0.36, 0);
+    box(cabinet, 1.7, 0.04, 0.46, woodSolid, 0, 0.74, 0);
+    cabinet.position.set(-6.2, 0, -1.1);
+
+    var artMat = new THREE.MeshStandardMaterial({ color: 0xE7E1D8, roughness: 0.8, transparent: true, opacity: 0 });
+    var frameMat = new THREE.MeshStandardMaterial({ color: 0x171717, roughness: 0.42, metalness: 0.25, transparent: true, opacity: 0 });
+    var art = new THREE.Mesh(new THREE.PlaneGeometry(1.15, 1.45), artMat);
+    art.position.set(-0.4, 1.65, -3.86);
+    art.scale.set(0.6, 0.6, 1);
+    scene.add(art);
+    box(scene, 1.28, 1.58, 0.04, frameMat, -0.4, 1.65, -3.9);
+    var loader = new THREE.TextureLoader();
+    loader.load("assets/about-2.jpg", function (tex) {
+      tex.colorSpace = THREE.SRGBColorSpace;
+      artMat.map = tex;
+      artMat.needsUpdate = true;
+    });
+
+    var rug = new THREE.Mesh(new THREE.PlaneGeometry(3.6, 2.4), new THREE.MeshStandardMaterial({ color: 0xffffff, map: weave, roughness: 1 }));
+    rug.rotation.x = -Math.PI / 2;
+    rug.position.set(0.35, 0.015, 1.85);
+    rug.receiveShadow = true;
+    rug.material.transparent = true;
+    rug.material.opacity = 0;
+    scene.add(rug);
+
+    var table = new THREE.Group();
+    scene.add(table);
+    box(table, 1.25, 0.045, 0.68, woodSolid, 0, 0.4, 0);
+    [[-0.54, -0.26], [0.54, -0.26], [-0.54, 0.26], [0.54, 0.26]].forEach(function (p) {
+      box(table, 0.04, 0.36, 0.04, black, p[0], 0.18, p[1]);
+    });
+    table.position.set(0.15, -6, 2.35);
+
+    function plant(x, z) {
+      var g = new THREE.Group();
+      var pot = new THREE.Mesh(new THREE.CylinderGeometry(0.12, 0.1, 0.16, 16), concrete);
+      pot.position.y = 0.08;
+      pot.castShadow = !mobile;
+      g.add(pot);
+      var leaf = new THREE.Mesh(new THREE.ConeGeometry(0.2, 0.55, 8), new THREE.MeshStandardMaterial({ color: 0x3E5C45, roughness: 0.8 }));
+      leaf.position.y = 0.42;
+      leaf.castShadow = !mobile;
+      g.add(leaf);
+      scene.add(g);
+      g.position.set(x, -6, z);
+      return g;
+    }
+    var plantA = plant(-2.4, 1.1);
+    var plantB = plant(2.8, -2.4);
+
+    var sky = new THREE.Mesh(new THREE.PlaneGeometry(16, 9), new THREE.MeshBasicMaterial({ color: 0xD5E2D4 }));
+    sky.position.set(6.4, 2.4, 0.2);
+    sky.rotation.y = -Math.PI / 2;
+    scene.add(sky);
+
+    var hemi = new THREE.HemisphereLight(0xFFF8F0, 0x8C7A68, 0.55);
+    scene.add(hemi);
+    var ambient = new THREE.AmbientLight(0xF7F1E8, 0.42);
+    scene.add(ambient);
+    var sun = new THREE.DirectionalLight(0xFFF4E4, 1.15);
+    sun.position.set(7.5, 6.5, 3);
+    sun.castShadow = !mobile;
+    sun.shadow.mapSize.set(mobile ? 512 : 2048, mobile ? 512 : 2048);
+    sun.shadow.camera.near = 0.5;
+    sun.shadow.camera.far = 24;
+    sun.shadow.camera.left = -8;
+    sun.shadow.camera.right = 8;
+    sun.shadow.camera.top = 8;
+    sun.shadow.camera.bottom = -8;
+    sun.shadow.bias = -0.0006;
+    scene.add(sun);
+    var fill = new THREE.PointLight(0xF3E6D4, 0, 8);
+    fill.position.set(2.4, 2.2, 1);
+    scene.add(fill);
+
+    var stageIndex = document.getElementById("stage-index");
+    var stageName = document.getElementById("stage-name");
+    var stages = [
+      [0, "01", "Floor Plan"]
+    ];
+
+    var tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".hero",
+        start: "top top",
+        end: function () { return window.innerWidth < 800 ? "+=280%" : "+=500%"; },
+        pin: true,
+        scrub: true,
+        anticipatePin: 1,
+        onUpdate: function (self) {
+          var p = self.progress;
+          var current = stages[0];
+          for (var i = 0; i < stages.length; i++) if (p >= stages[i][0]) current = stages[i];
+          stageIndex.textContent = current[1];
+          stageName.textContent = current[2];
+        }
+      }
+    });
+    gsap.set(".bp-elev", { autoAlpha: 0 });
+    gsap.set(".bp-label-elev", { autoAlpha: 0 });
+    tl.to(".bp-plan", { autoAlpha: 0, scale: 0.94, duration: 0.45, ease: "power1.inOut" }, 0.95);
+    tl.to(".bp-label-plan", { autoAlpha: 0, duration: 0.25 }, 0.9);
+    tl.to(".bp-label-elev", { autoAlpha: 1, duration: 0.3 }, 1.0);
+    tl.fromTo(".bp-elev", { autoAlpha: 0, scale: 1.06 }, { autoAlpha: 1, scale: 1, duration: 0.45, ease: "power1.out" }, 0.95);
+    tl.to(".bp-elev .bp-draw", { strokeDashoffset: 0, duration: 0.75, stagger: 0.05, ease: "power1.out" }, 1.0);
+    tl.to("#blueprint", { autoAlpha: 0, duration: 0.55, ease: "power1.inOut" }, 1.7);
+    tl.to(".hero-shade", { opacity: 1, duration: 0.6, ease: "none" }, 1.65);
+    tl.to(".hero-shade", { opacity: 0, duration: 0.55, ease: "none" }, 2.15);
+
+    var build = gsap.timeline();
+    tl.add(build, 1.55);
+    build.to(foundation.scale, { x: 1, z: 1, duration: 1.15, ease: "power2.out" }, 0);
+    build.to(cam, { x: 2.6, y: 1.7, z: 6.1, tx: 0, ty: 1.15, tz: -0.8, duration: 1.4, ease: "none" }, 0);
+    build.fromTo(".hero-copy", { autoAlpha: 1, y: 0 }, { autoAlpha: 0, y: -36, duration: 0.8, ease: "none" }, 0);
+    build.to(".scroll-hint", { autoAlpha: 0, duration: 0.25 }, 0.15);
+    build.to(risers.map(function (m) { return m.scale; }), { y: 1, duration: 1.15, stagger: 0.05, ease: "power3.out" }, 1.15);
+    build.to([header.scale, sill.scale], { y: 1, duration: 0.7, stagger: 0.08, ease: "power2.out" }, 1.7);
+    build.to(mullions.map(function (m) { return m.scale; }), { y: 1, z: 1, duration: 0.7, stagger: 0.04, ease: "power2.out" }, 1.95);
+    build.to([baseL.scale, baseB.scale], { y: 1, duration: 0.45, stagger: 0.05 }, 2.15);
+    build.to(ceiling.material, { opacity: 1, duration: 0.5 }, 2.3);
+    build.to(cam, { x: 1.8, y: 1.55, z: 5.1, duration: 1.6, ease: "none" }, 1.5);
+    build.to(floorFinishMat, { opacity: 1, duration: 0.4 }, 3.05);
+    build.to(lineMat, { opacity: 0, duration: 0.6 }, 2.4);
+    build.to(plaster.color, { r: 0.97, g: 0.95, b: 0.91, duration: 0.8 }, 3.1);
+    build.to(glassMat, { opacity: 0.35, duration: 0.7 }, 3.3);
+    build.to(sun, { intensity: 2.6, duration: 1.1 }, 3.2);
+    build.to(ambient, { intensity: 0.55, duration: 1.1 }, 3.2);
+    build.to(hemi, { intensity: 0.7, duration: 1.1 }, 3.2);
+    build.to(fill, { intensity: 2.2, duration: 0.8 }, 3.6);
+    build.to(scene.fog, { near: 18, far: 40, duration: 1.2 }, 3.4);
+    build.to(sofa.position, { y: 0, z: 0.55, duration: 1.25, ease: "power3.out" }, 4.55);
+    build.to(drumA.position, { y: 0, duration: 0.9, ease: "power2.out" }, 5.15);
+    build.to(drumB.position, { y: 0, duration: 0.9, ease: "power2.out" }, 5.35);
+    build.to(table.position, { y: 0, duration: 0.95, ease: "power3.out" }, 5.05);
+    build.to(dining.position, { y: 0, duration: 1.05, ease: "power3.out" }, 5.05);
+    build.to(plantA.position, { y: 0, duration: 0.8, ease: "power2.out" }, 5.45);
+    build.to(plantB.position, { y: 0, duration: 0.8, ease: "power2.out" }, 5.55);
+    build.to(cabinet.position, { x: -3.55, duration: 1, ease: "power3.out" }, 5.4);
+    build.to(art.scale, { x: 1, y: 1, duration: 0.7, ease: "power2.out" }, 5.85);
+    build.to(artMat, { opacity: 1, duration: 0.55 }, 5.85);
+    build.to(frameMat, { opacity: 1, duration: 0.55 }, 5.85);
+    build.to(rug.material, { opacity: 1, duration: 0.5 }, 5.7);
+    build.to(cam, { x: 0.85, y: 1.32, z: 3.55, tx: -0.15, ty: 1.05, tz: -1.2, duration: 2.1, ease: "none" }, 5.2);
+    build.to(".hero-photo", { opacity: 1, duration: 1.15, ease: "power1.inOut" }, 7.15);
+    build.to(".hero-photo img", { scale: 1, duration: 1.5, ease: "none" }, 6.9);
+    build.to(canvas, { opacity: 0, duration: 0.7, ease: "none" }, 7.7);
+    var total = tl.duration();
+    var cut = 1.55 / total;
+    var elev = 0.95 / total;
+    stages = [
+      [0, "01", "Floor Plan"],
+      [elev, "02", "Elevation"],
+      [cut, "03", "Architectural Foundation"],
+      [cut + (1 - cut) * 0.18, "04", "Walls & Structure"],
+      [cut + (1 - cut) * 0.4, "05", "Interior Materials"],
+      [cut + (1 - cut) * 0.62, "06", "Furniture Assembly"],
+      [cut + (1 - cut) * 0.84, "07", "Final Interior Reveal"]
+    ];
+
+    var running = true;
+    function resize() {
+      var w = canvas.clientWidth || window.innerWidth;
+      var h = canvas.clientHeight || window.innerHeight;
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, mobile ? 1.15 : 1.6));
+      renderer.setSize(w, h, false);
+      camera.aspect = w / Math.max(1, h);
+      camera.updateProjectionMatrix();
+    }
+    resize();
+    window.addEventListener("resize", resize);
+    function loop() {
+      requestAnimationFrame(loop);
+      if (!running) return;
+      applyCam();
+      renderer.render(scene, camera);
+    }
+    loop();
+    window.addEventListener("pagehide", function () {
+      running = false;
+      renderer.dispose();
+      scene.traverse(function (obj) {
+        if (obj.geometry) obj.geometry.dispose();
+        if (obj.material) {
+          var mats = [].concat(obj.material);
+          mats.forEach(function (m) {
+            if (m.map) m.map.dispose();
+            m.dispose();
+          });
+        }
+      });
+    });
+  }
+
+  function initAbout() {
+    if (!reduced) {
+      gsap.fromTo("#about", {
+        clipPath: "ellipse(48% 62% at 50% 145%)"
+      }, {
+        clipPath: "ellipse(160% 180% at 50% 80%)",
+        ease: "none",
+        scrollTrigger: {
+          trigger: "#about",
+          start: "top 88%",
+          end: "top top",
+          scrub: 0.4
+        }
+      });
+    }
+    if (reduced) return;
+    gsap.from(".about-title .line span", {
+      yPercent: 110, duration: 1.05, stagger: 0.12, ease: "power3.out",
+      scrollTrigger: { trigger: "#about", start: "top 72%", toggleActions: "play none none reverse" }
+    });
+    gsap.from(".about-main", {
+      clipPath: "inset(100% 0% 0% 0%)", duration: 1.25, ease: "power3.inOut",
+      scrollTrigger: { trigger: ".about-visual", start: "top 75%", toggleActions: "play none none reverse" }
+    });
+    gsap.from(".about-float", {
+      clipPath: "inset(0% 0% 100% 0%)", duration: 1.1, ease: "power3.out", delay: 0.15,
+      scrollTrigger: { trigger: ".about-visual", start: "top 70%", toggleActions: "play none none reverse" }
+    });
+    gsap.to(".about-main", {
+      yPercent: -8, ease: "none",
+      scrollTrigger: { trigger: "#about", start: "top bottom", end: "bottom top", scrub: true }
+    });
+    var visual = document.getElementById("about-visual");
+    if (fine) {
+      visual.addEventListener("mousemove", function (e) {
+        var rect = visual.getBoundingClientRect();
+        var x = (e.clientX - rect.left) / rect.width - 0.5;
+        var y = (e.clientY - rect.top) / rect.height - 0.5;
+        gsap.to(".about-float", { x: x * -28, y: y * -18, duration: 0.7, ease: "power2.out" });
+        gsap.to(".about-small", { x: x * 18, y: y * 14, duration: 0.7, ease: "power2.out" });
+        gsap.to(".about-main img", { x: x * 16, duration: 0.8, ease: "power2.out" });
+      });
+      visual.addEventListener("mouseleave", function () {
+        gsap.to(".about-float, .about-small, .about-main img", { x: 0, y: 0, duration: 0.7 });
+      });
+    }
+  }
+
+  function initServices() {
+    var section = document.getElementById("services");
+    var track = document.getElementById("services-track");
+    var view = document.getElementById("services-viewport");
+    var panels = gsap.utils.toArray(".panel");
+    var jumps = gsap.utils.toArray(".service-jump");
+    var indexEl = document.getElementById("service-index");
+    var meter = document.getElementById("service-meter");
+    var current = 0;
+
+    function mark(index) {
+      current = index;
+      indexEl.textContent = String(index + 1).padStart(2, "0") + " / 03";
+      jumps.forEach(function (btn, n) { btn.classList.toggle("is-on", n === index); });
+    }
+    function goTo(index) {
+      var next = Math.max(0, Math.min(panels.length - 1, index));
+      var st = ScrollTrigger.getById("services-x");
+      if (st && section.classList.contains("horizontal")) {
+        var y = st.start + (st.end - st.start) * (panels.length === 1 ? 0 : next / (panels.length - 1));
+        if (lenis) lenis.scrollTo(y, { duration: 1 });
+        else window.scrollTo({ top: y, behavior: "smooth" });
+      } else {
+        scrollToEl(panels[next]);
+        mark(next);
+      }
+    }
+    function sizePanels() {
+      if (!section.classList.contains("horizontal")) return;
+      var w = view.clientWidth;
+      panels.forEach(function (panel) {
+        panel.style.width = w + "px";
+        panel.style.flex = "0 0 " + w + "px";
+      });
+    }
+
+    var mm = gsap.matchMedia();
+    mm.add("(min-width: 900px)", function () {
+      if (reduced) return;
+      section.classList.add("horizontal");
+      sizePanels();
+      var tween = gsap.to(track, {
+        x: function () {
+          sizePanels();
+          return -(track.scrollWidth - view.clientWidth);
+        },
+        ease: "none",
+        scrollTrigger: {
+          id: "services-x",
+          trigger: "#services",
+          pin: true,
+          scrub: 0.75,
+          start: "top top",
+          end: function () { return "+=" + Math.max(1, track.scrollWidth - view.clientWidth); },
+          invalidateOnRefresh: true,
+          onUpdate: function (self) {
+            mark(Math.round(self.progress * (panels.length - 1)));
+            if (meter) meter.style.transform = "scaleX(" + (0.333 + self.progress * 0.667) + ")";
+          }
+        }
+      });
+      panels.forEach(function (panel) {
+        gsap.fromTo(panel.querySelector("img"), { scale: 1.12 }, {
+          scale: 1, ease: "none",
+          scrollTrigger: {
+            trigger: panel,
+            containerAnimation: tween,
+            start: "left right",
+            end: "right left",
+            scrub: true
+          }
+        });
+      });
+      return function () {
+        section.classList.remove("horizontal");
+        panels.forEach(function (panel) { panel.style.width = ""; panel.style.flex = ""; });
+      };
+    });
+
+    mm.add("(max-width: 899px)", function () {
+      if (reduced) return;
+      panels.forEach(function (panel) {
+        gsap.fromTo(panel.querySelector(".panel-media"), { clipPath: "inset(12% 0% 12% 0%)" }, {
+          clipPath: "inset(0% 0% 0% 0%)", ease: "none",
+          scrollTrigger: { trigger: panel, start: "top 85%", end: "top 40%", scrub: true }
+        });
+      });
+    });
+
+    document.querySelectorAll("[data-service]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        goTo(current + Number(btn.getAttribute("data-service")));
+      });
+    });
+    jumps.forEach(function (btn) {
+      btn.addEventListener("click", function () { goTo(Number(btn.getAttribute("data-go"))); });
+    });
+  }
+
+  function initPortfolio() {
+    var items = gsap.utils.toArray(".folio-item");
+    var stage = document.getElementById("tilt-stage");
+    var activeCap = document.getElementById("folio-active");
+    var active = 0;
+    var timer = 0;
+
+    function place(animated) {
+      var n = items.length;
+      var narrow = window.innerWidth < 800;
+      var spread = stage.clientWidth * (narrow ? 0.46 : 0.3);
+      items.forEach(function (item, i) {
+        var d = i - active;
+        if (d > n / 2) d -= n;
+        if (d < -n / 2) d += n;
+        var abs = Math.abs(d);
+        gsap.to(item, {
+          xPercent: -50,
+          yPercent: -50,
+          x: d * spread,
+          y: abs * (narrow ? 10 : 18),
+          rotation: d === 0 ? -4 : d * (narrow ? 14 : 12),
+          scale: d === 0 ? 1 : Math.max(0.68, 0.84 - (abs - 1) * 0.1),
+          zIndex: 20 - abs,
+          autoAlpha: abs > 2 ? 0 : 1,
+          duration: animated && !reduced ? 0.85 : 0,
+          ease: "power3.out",
+          overwrite: "auto"
+        });
+      });
+      var shown = items[active];
+      activeCap.querySelector("b").textContent = String(active + 1).padStart(2, "0");
+      activeCap.querySelector("span").textContent = shown.getAttribute("data-cap");
+    }
+    function go(next) {
+      active = (next + items.length) % items.length;
+      place(true);
+    }
+    function play() {
+      if (reduced) return;
+      clearInterval(timer);
+      timer = setInterval(function () { go(active + 1); }, 3600);
+    }
+    place(false);
+    play();
+    var dragged = false;
+    document.querySelectorAll("[data-folio]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        go(active + Number(btn.getAttribute("data-folio")));
+        play();
+      });
+    });
+    var dragX = 0;
+    stage.addEventListener("pointerdown", function (e) { dragX = e.clientX; });
+    stage.addEventListener("pointerup", function (e) {
+      var delta = e.clientX - dragX;
+      dragged = Math.abs(delta) >= 36;
+      if (!dragged) return;
+      go(active + (delta < 0 ? 1 : -1));
+      play();
+    });
+    stage.addEventListener("mouseenter", function () { clearInterval(timer); });
+    stage.addEventListener("mouseleave", play);
+    window.addEventListener("resize", function () { place(false); });
+
+    var box = document.getElementById("lightbox");
+    var img = document.getElementById("lightbox-img");
+    var cap = document.getElementById("lightbox-cap");
+    function close() {
+      var done = function () { box.hidden = true; if (lenis) lenis.start(); };
+      if (reduced) done();
+      else gsap.to(box, { clipPath: "inset(22% 18% 22% 18%)", duration: 0.45, ease: "power2.in", onComplete: done });
+    }
+    items.forEach(function (item) {
+      item.addEventListener("click", function () {
+        if (dragged) { dragged = false; return; }
+        img.src = item.getAttribute("data-full");
+        img.alt = item.getAttribute("data-cap");
+        cap.textContent = item.getAttribute("data-cap");
+        box.hidden = false;
+        if (lenis) lenis.stop();
+        if (reduced) gsap.set(box, { clipPath: "inset(0%)" });
+        else gsap.fromTo(box, { clipPath: "inset(30% 22% 30% 22%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.7, ease: "power3.inOut" });
+      });
+    });
+    document.getElementById("lightbox-close").addEventListener("click", close);
+    box.addEventListener("click", function (e) { if (e.target === box) close(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !box.hidden) close(); });
+  }
+
+  function initExplore() {
+    if (root.classList.contains("show-photo")) return;
+    var canvas = document.getElementById("explore-room");
+    if (!canvas || typeof THREE === "undefined") return;
+    var renderer;
+    try {
+      renderer = new THREE.WebGLRenderer({
+        canvas: canvas,
+        antialias: !window.matchMedia("(max-width: 800px)").matches,
+        alpha: false,
+        powerPreference: "high-performance"
+      });
+    } catch (err) {
+      document.getElementById("explore-pin").style.display = "none";
+      document.querySelector(".explore-fallback").style.display = "grid";
+      return;
+    }
+    var mobile = window.matchMedia("(max-width: 800px)").matches;
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, mobile ? 1 : 1.35));
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.12;
+    renderer.shadowMap.enabled = !mobile;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.setClearColor(0xE4DCD2, 1);
+
+    var scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xE4DCD2);
+    scene.fog = new THREE.Fog(0xE4DCD2, 9, 20);
+    var camera = new THREE.PerspectiveCamera(mobile ? 46 : 34, 1, 0.08, 45);
+
+    function woodTex() {
+      var c = document.createElement("canvas");
+      c.width = 1024; c.height = 1024;
+      var g = c.getContext("2d");
+      var boards = 8;
+      var bh = 1024 / boards;
+      for (var b = 0; b < boards; b++) {
+        var tone = 118 + (b % 3) * 16;
+        g.fillStyle = "rgb(" + (tone + 46) + "," + (tone + 8) + "," + (tone - 28) + ")";
+        g.fillRect(0, b * bh, 1024, bh - 3);
+        g.fillStyle = "rgba(70,42,22,0.28)";
+        g.fillRect(0, b * bh + bh - 4, 1024, 4);
+        for (var n = 0; n < 16; n++) {
+          g.strokeStyle = "rgba(90,52,24," + (0.05 + (n % 4) * 0.03) + ")";
+          g.lineWidth = 1;
+          var yy = b * bh + 8 + n * (bh / 18);
+          g.beginPath();
+          g.moveTo(0, yy);
+          g.bezierCurveTo(280, yy + (b % 2 ? 4 : -3), 700, yy - 2, 1024, yy + 1);
+          g.stroke();
+        }
+      }
+      var t = new THREE.CanvasTexture(c);
+      t.wrapS = t.wrapT = THREE.RepeatWrapping;
+      t.repeat.set(2.2, 8);
+      t.colorSpace = THREE.SRGBColorSpace;
+      t.anisotropy = renderer.capabilities.getMaxAnisotropy();
+      return t;
+    }
+    function fineWood() {
+      var c = document.createElement("canvas");
+      c.width = 512; c.height = 512;
+      var g = c.getContext("2d");
+      g.fillStyle = "#7A4E32";
+      g.fillRect(0, 0, 512, 512);
+      for (var i = 0; i < 90; i++) {
+        g.strokeStyle = "rgba(48,24,12," + (0.05 + (i % 4) * 0.025) + ")";
+        g.lineWidth = 1;
+        var yy = i * 5.7;
+        g.beginPath();
+        g.moveTo(0, yy);
+        g.bezierCurveTo(140, yy + 3, 340, yy - 2, 512, yy + 1);
+        g.stroke();
+      }
+      var t = new THREE.CanvasTexture(c);
+      t.wrapS = t.wrapT = THREE.RepeatWrapping;
+      t.repeat.set(1.4, 1);
+      t.colorSpace = THREE.SRGBColorSpace;
+      t.anisotropy = renderer.capabilities.getMaxAnisotropy();
+      return t;
+    }
+    function plasterTex() {
+      var c = document.createElement("canvas");
+      c.width = 256; c.height = 256;
+      var g = c.getContext("2d");
+      g.fillStyle = "#E6DFD4";
+      g.fillRect(0, 0, 256, 256);
+      for (var i = 0; i < 1800; i++) {
+        g.fillStyle = "rgba(110,96,82," + (Math.random() * 0.07) + ")";
+        g.fillRect(Math.random() * 256, Math.random() * 256, 2, 1);
+      }
+      var t = new THREE.CanvasTexture(c);
+      t.wrapS = t.wrapT = THREE.RepeatWrapping;
+      t.repeat.set(4, 2);
+      t.colorSpace = THREE.SRGBColorSpace;
+      return t;
+    }
+    function rugTex() {
+      var c = document.createElement("canvas");
+      c.width = 256; c.height = 256;
+      var g = c.getContext("2d");
+      g.fillStyle = "#8C7156";
+      g.fillRect(0, 0, 256, 256);
+      g.strokeStyle = "#E7D8C4";
+      g.lineWidth = 14;
+      g.strokeRect(18, 18, 220, 220);
+      g.lineWidth = 3;
+      g.strokeStyle = "rgba(255,244,230,0.45)";
+      g.strokeRect(34, 34, 188, 188);
+      var t = new THREE.CanvasTexture(c);
+      t.colorSpace = THREE.SRGBColorSpace;
+      return t;
+    }
+    function outsideTex() {
+      var c = document.createElement("canvas");
+      c.width = 256; c.height = 320;
+      var g = c.getContext("2d");
+      var sky = g.createLinearGradient(0, 0, 0, 320);
+      sky.addColorStop(0, "#F7F1E6");
+      sky.addColorStop(0.42, "#E4EEE6");
+      sky.addColorStop(1, "#C5D0C2");
+      g.fillStyle = sky;
+      g.fillRect(0, 0, 256, 320);
+      g.fillStyle = "rgba(78,104,86,0.45)";
+      g.beginPath();
+      g.moveTo(0, 210);
+      g.quadraticCurveTo(70, 150, 130, 196);
+      g.quadraticCurveTo(190, 150, 256, 188);
+      g.lineTo(256, 320);
+      g.lineTo(0, 320);
+      g.fill();
+      var t = new THREE.CanvasTexture(c);
+      t.colorSpace = THREE.SRGBColorSpace;
+      return t;
+    }
+    function brandTex() {
+      var c = document.createElement("canvas");
+      c.width = 512; c.height = 320;
+      var g = c.getContext("2d");
+      g.fillStyle = "#EFE6DA";
+      g.fillRect(0, 0, 512, 320);
+      g.fillStyle = "#3A302A";
+      g.font = "500 64px Georgia, serif";
+      g.fillText("PREMIUM", 48, 156);
+      g.font = "16px Georgia, serif";
+      g.fillText("INTERIOR DESIGN", 52, 196);
+      var t = new THREE.CanvasTexture(c);
+      t.colorSpace = THREE.SRGBColorSpace;
+      return t;
+    }
+
+    var wood = woodTex();
+    var plaster = new THREE.MeshStandardMaterial({ color: 0xF3EEE6, map: plasterTex(), roughness: 0.94 });
+    var floorMat = new THREE.MeshStandardMaterial({ color: 0xE0C09A, map: wood, roughness: 0.55, metalness: 0.03 });
+    var linen = new THREE.MeshStandardMaterial({ color: 0xE6DCD0, roughness: 0.92 });
+    var linenDeep = new THREE.MeshStandardMaterial({ color: 0xCDBEAB, roughness: 0.9 });
+    var tableWood = new THREE.MeshStandardMaterial({ color: 0xC48A58, map: fineWood(), roughness: 0.4, metalness: 0.06 });
+    var navy = new THREE.MeshStandardMaterial({ color: 0x2C3A48, roughness: 0.84 });
+    var walnut = new THREE.MeshStandardMaterial({ color: 0x6B4A32, roughness: 0.48 });
+    var espresso = new THREE.MeshStandardMaterial({ color: 0x3C322C, roughness: 0.52 });
+    var stoneMat = new THREE.MeshStandardMaterial({ color: 0xD5CEC3, roughness: 0.62 });
+    var metal = new THREE.MeshStandardMaterial({ color: 0xC2B09A, roughness: 0.28, metalness: 0.82 });
+    var leafMat = new THREE.MeshStandardMaterial({ color: 0x3E5646, roughness: 0.72 });
+    var potMat = new THREE.MeshStandardMaterial({ color: 0xC9B7A2, roughness: 0.5 });
+    var sage = new THREE.MeshStandardMaterial({ color: 0x8D947E, roughness: 0.82 });
+    var rugMat = new THREE.MeshStandardMaterial({ map: rugTex(), roughness: 0.96 });
+    var shadeMat = new THREE.MeshStandardMaterial({
+      color: 0xF6F0E6, roughness: 0.72, side: THREE.DoubleSide,
+      emissive: 0xFFE6C2, emissiveIntensity: 0.45
+    });
+    var day = outsideTex();
+    var glassMat = new THREE.MeshStandardMaterial({
+      map: day, emissive: 0xFFF4E6, emissiveMap: day, emissiveIntensity: 0.62, roughness: 0.35
+    });
+    var brandMat = new THREE.MeshStandardMaterial({ map: brandTex(), roughness: 0.7 });
+
+    function addBox(parent, w, h, d, mat, x, y, z) {
+      var m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
+      m.position.set(x, y, z);
+      m.castShadow = !mobile;
+      m.receiveShadow = true;
+      parent.add(m);
+      return m;
+    }
+    function cushion(parent, w, h, d, rad, mat, x, y, z) {
+      var shape = new THREE.Shape();
+      var rr = Math.min(rad, w * 0.22, h * 0.22);
+      shape.moveTo(-w / 2 + rr, -h / 2);
+      shape.lineTo(w / 2 - rr, -h / 2);
+      shape.absarc(w / 2 - rr, -h / 2 + rr, rr, -Math.PI / 2, 0, false);
+      shape.lineTo(w / 2, h / 2 - rr);
+      shape.absarc(w / 2 - rr, h / 2 - rr, rr, 0, Math.PI / 2, false);
+      shape.lineTo(-w / 2 + rr, h / 2);
+      shape.absarc(-w / 2 + rr, h / 2 - rr, rr, Math.PI / 2, Math.PI, false);
+      shape.lineTo(-w / 2, -h / 2 + rr);
+      shape.absarc(-w / 2 + rr, -h / 2 + rr, rr, Math.PI, Math.PI * 1.5, false);
+      var geo = new THREE.ExtrudeGeometry(shape, {
+        depth: d,
+        bevelEnabled: true,
+        bevelThickness: Math.min(0.016, h * 0.22, d * 0.22),
+        bevelSize: Math.min(0.012, h * 0.18),
+        bevelSegments: mobile ? 1 : 2,
+        curveSegments: mobile ? 3 : 5
+      });
+      geo.translate(0, 0, -d / 2);
+      var mesh = new THREE.Mesh(geo, mat);
+      mesh.position.set(x, y, z);
+      mesh.castShadow = !mobile;
+      mesh.receiveShadow = true;
+      parent.add(mesh);
+      return mesh;
+    }
+    function blob(parent, sx, sz) {
+      var m = new THREE.Mesh(new THREE.CircleGeometry(1, 18), new THREE.MeshBasicMaterial({
+        color: 0x2A211C, transparent: true, opacity: 0.16, depthWrite: false
+      }));
+      m.rotation.x = -Math.PI / 2;
+      m.position.y = 0.015;
+      m.scale.set(sx, sz, 1);
+      parent.add(m);
+    }
+    function shell(w, h, d, mat, x, y, z) {
+      var m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat);
+      m.position.set(x, y, z);
+      m.receiveShadow = true;
+      scene.add(m);
+      return m;
+    }
+
+    var floor = new THREE.Mesh(new THREE.PlaneGeometry(6.4, 24), floorMat);
+    floor.rotation.x = -Math.PI / 2;
+    floor.position.set(0, 0, -8);
+    floor.receiveShadow = true;
+    scene.add(floor);
+    shell(0.16, 3.05, 24, plaster, -3.28, 1.525, -8);
+    shell(0.16, 3.05, 24, plaster, 3.28, 1.525, -8);
+    shell(6.72, 3.05, 0.16, plaster, 0, 1.525, -20.05);
+    shell(6.72, 0.12, 24, plaster, 0, 3.11, -8);
+    shell(0.07, 0.1, 23.6, walnut, -3.16, 0.05, -8);
+    shell(0.07, 0.1, 23.6, walnut, 3.16, 0.05, -8);
+
+    function doorway(z) {
+      var h = 3.05;
+      var colW = 2.05;
+      var colX = 2.175;
+      shell(colW, h, 0.18, plaster, -colX, h / 2, z);
+      shell(colW, h, 0.18, plaster, colX, h / 2, z);
+      shell(2.3, 0.78, 0.18, plaster, 0, h - 0.39, z);
+      shell(0.08, 2.2, 0.22, walnut, -1.12, 1.1, z);
+      shell(0.08, 2.2, 0.22, walnut, 1.12, 1.1, z);
+    }
+    doorway(-4.4);
+    doorway(-12.4);
+
+    function windowAt(z) {
+      var g = new THREE.Group();
+      addBox(g, 1.55, 1.7, 0.06, walnut, 0, 0, 0);
+      var pane = new THREE.Mesh(new THREE.PlaneGeometry(1.28, 1.42), glassMat);
+      pane.position.z = 0.04;
+      g.add(pane);
+      addBox(g, 0.035, 1.42, 0.04, walnut, 0, 0, 0.05);
+      addBox(g, 1.28, 0.035, 0.04, walnut, 0, 0, 0.05);
+      g.position.set(3.16, 1.7, z);
+      g.rotation.y = -Math.PI / 2;
+      scene.add(g);
+    }
+    windowAt(-1.7);
+    windowAt(-8.5);
+    windowAt(-16.2);
+
+    function downlight(x, z, power) {
+      var disc = new THREE.Mesh(new THREE.CircleGeometry(0.16, 16), new THREE.MeshStandardMaterial({
+        color: 0xFFF6EA, emissive: 0xFFE8C4, emissiveIntensity: 0.8, roughness: 1
+      }));
+      disc.rotation.x = Math.PI / 2;
+      disc.position.set(x, 3.04, z);
+      scene.add(disc);
+      var lamp = new THREE.PointLight(0xFFF1DC, power, 8, 2);
+      lamp.position.set(x, 2.65, z);
+      scene.add(lamp);
+    }
+    downlight(-0.2, -1.7, mobile ? 10 : 22);
+    downlight(-0.4, -8.4, mobile ? 12 : 26);
+    downlight(0.2, -16.6, mobile ? 10 : 22);
+
+    var hemi = new THREE.HemisphereLight(0xFFF8F2, 0x8A7360, 0.55);
+    scene.add(hemi);
+    scene.add(new THREE.AmbientLight(0xF6EFE6, 0.22));
+    var sun = new THREE.DirectionalLight(0xFFF6E8, 1.85);
+    sun.position.set(4.5, 7.5, -2);
+    sun.target.position.set(0, 0.6, -10);
+    sun.castShadow = !mobile;
+    sun.shadow.mapSize.set(1024, 1024);
+    sun.shadow.camera.near = 0.5;
+    sun.shadow.camera.far = 28;
+    sun.shadow.camera.left = -8;
+    sun.shadow.camera.right = 8;
+    sun.shadow.camera.top = 12;
+    sun.shadow.camera.bottom = -12;
+    sun.shadow.bias = -0.0005;
+    scene.add(sun);
+    scene.add(sun.target);
+
+    function makeSofa(x, z, rot) {
+      var g = new THREE.Group();
+      addBox(g, 2.16, 0.08, 0.86, walnut, 0, 0.3, 0);
+      [[-0.96, -0.32], [0.96, -0.32], [-0.96, 0.32], [0.96, 0.32]].forEach(function (p) {
+        var leg = new THREE.Mesh(new THREE.CylinderGeometry(0.028, 0.036, 0.26, 8), walnut);
+        leg.position.set(p[0], 0.13, p[1]);
+        leg.castShadow = !mobile;
+        g.add(leg);
+      });
+      [-0.66, 0, 0.66].forEach(function (sx) {
+        cushion(g, 0.62, 0.14, 0.74, 0.04, linen, sx, 0.45, 0.04);
+      });
+      var back = cushion(g, 2.02, 0.5, 0.14, 0.05, linen, 0, 0.78, -0.32);
+      back.rotation.x = -0.1;
+      cushion(g, 0.14, 0.34, 0.76, 0.04, linenDeep, -1.04, 0.52, 0.02);
+      cushion(g, 0.14, 0.34, 0.76, 0.04, linenDeep, 1.04, 0.52, 0.02);
+      var p1 = cushion(g, 0.4, 0.32, 0.1, 0.04, navy, -0.42, 0.64, -0.02);
+      p1.rotation.x = -0.55;
+      p1.rotation.z = 0.08;
+      var p2 = cushion(g, 0.36, 0.28, 0.09, 0.04, linenDeep, 0.4, 0.62, 0.02);
+      p2.rotation.x = -0.5;
+      p2.rotation.z = -0.12;
+      blob(g, 1.2, 0.62);
+      g.position.set(x, 0, z);
+      g.rotation.y = rot;
+      scene.add(g);
+    }
+    makeSofa(-1.9, -1.85, Math.PI / 2);
+
+    var rug = new THREE.Mesh(new THREE.PlaneGeometry(1.85, 2.7), rugMat);
+    rug.rotation.x = -Math.PI / 2;
+    rug.position.set(-1.25, 0.01, -1.85);
+    rug.receiveShadow = true;
+    scene.add(rug);
+
+    var table = new THREE.Group();
+    addBox(table, 0.95, 0.045, 0.52, stoneMat, 0, 0.38, 0);
+    addBox(table, 0.72, 0.02, 0.34, walnut, 0, 0.22, 0);
+    [[-0.4, -0.2], [0.4, -0.2], [-0.4, 0.2], [0.4, 0.2]].forEach(function (p) {
+      var leg = new THREE.Mesh(new THREE.CylinderGeometry(0.02, 0.02, 0.36, 8), metal);
+      leg.position.set(p[0], 0.18, p[1]);
+      table.add(leg);
+    });
+    addBox(table, 0.24, 0.022, 0.16, navy, -0.12, 0.415, 0.02);
+    addBox(table, 0.2, 0.018, 0.14, walnut, -0.1, 0.435, 0.04);
+    var vase = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.06, 0.14, 12), potMat);
+    vase.position.set(0.22, 0.47, -0.04);
+    table.add(vase);
+    table.position.set(-0.85, 0, -1.85);
+    scene.add(table);
+
+    function plant(x, z, scale) {
+      var g = new THREE.Group();
+      var pot = new THREE.Mesh(new THREE.CylinderGeometry(0.16 * scale, 0.13 * scale, 0.22 * scale, 12), potMat);
+      pot.position.y = 0.11 * scale;
+      pot.castShadow = !mobile;
+      g.add(pot);
+      for (var i = 0; i < 6; i++) {
+        var leaf = new THREE.Mesh(new THREE.SphereGeometry(0.15 * scale, 8, 6), leafMat);
+        leaf.scale.set(0.85, 1.45, 0.6);
+        leaf.position.set(Math.sin(i * 1.2) * 0.08 * scale, (0.38 + (i % 3) * 0.1) * scale, Math.cos(i) * 0.07 * scale);
+        leaf.castShadow = !mobile;
+        g.add(leaf);
+      }
+      g.position.set(x, 0, z);
+      scene.add(g);
+    }
+    plant(-2.55, -3.15, 1);
+    plant(2.35, -18.4, 1.15);
+
+    var floorLamp = new THREE.Group();
+    var pole = new THREE.Mesh(new THREE.CylinderGeometry(0.015, 0.02, 1.35, 8), metal);
+    pole.position.y = 0.68;
+    floorLamp.add(pole);
+    var shade = new THREE.Mesh(new THREE.CylinderGeometry(0.14, 0.22, 0.2, 12, 1, true), shadeMat);
+    shade.position.y = 1.42;
+    floorLamp.add(shade);
+    floorLamp.position.set(-2.55, 0, -3.15);
+    scene.add(floorLamp);
+
+    var art = new THREE.Group();
+    addBox(art, 0.05, 0.92, 0.7, walnut, 0, 0, 0);
+    var artFace = new THREE.Mesh(new THREE.PlaneGeometry(0.54, 0.74), glassMat);
+    artFace.rotation.y = Math.PI / 2;
+    artFace.position.x = 0.04;
+    art.add(artFace);
+    art.position.set(-3.16, 1.55, -1.7);
+    scene.add(art);
+
+    var dine = new THREE.Group();
+    addBox(dine, 1.7, 0.05, 0.9, tableWood, 0, 0.76, 0);
+    [[-0.7, -0.32], [0.7, -0.32], [-0.7, 0.32], [0.7, 0.32]].forEach(function (p) {
+      var leg = new THREE.Mesh(new THREE.CylinderGeometry(0.035, 0.045, 0.74, 8), walnut);
+      leg.position.set(p[0], 0.37, p[1]);
+      leg.castShadow = !mobile;
+      dine.add(leg);
+    });
+    var vase = new THREE.Mesh(new THREE.CylinderGeometry(0.055, 0.07, 0.16, 16), potMat);
+    vase.position.set(0, 0.88, 0);
+    dine.add(vase);
+    for (var fl = 0; fl < 5; fl++) {
+      var sprig = new THREE.Mesh(new THREE.SphereGeometry(0.045, 8, 6), leafMat);
+      sprig.scale.set(0.7, 1.3, 0.55);
+      sprig.position.set(Math.sin(fl * 1.3) * 0.04, 1.05 + (fl % 2) * 0.05, Math.cos(fl) * 0.035);
+      dine.add(sprig);
+    }
+    dine.position.set(-0.95, 0, -8.45);
+    scene.add(dine);
+
+    function chair(x, z, rot, cloth) {
+      var g = new THREE.Group();
+      [[-0.16, -0.16], [0.16, -0.16], [-0.16, 0.16], [0.16, 0.16]].forEach(function (p) {
+        var leg = new THREE.Mesh(new THREE.CylinderGeometry(0.018, 0.022, 0.46, 6), walnut);
+        leg.position.set(p[0], 0.23, p[1]);
+        g.add(leg);
+      });
+      cushion(g, 0.4, 0.05, 0.4, 0.025, cloth, 0, 0.48, 0);
+      var back = cushion(g, 0.4, 0.42, 0.045, 0.02, cloth, 0, 0.72, -0.18);
+      back.rotation.x = -0.08;
+      blob(g, 0.32, 0.32);
+      g.position.set(x, 0, z);
+      g.rotation.y = rot;
+      scene.add(g);
+    }
+    chair(-0.95, -7.72, Math.PI, linen);
+    chair(-0.95, -9.18, 0, linen);
+    chair(-1.72, -8.45, Math.PI / 2, linen);
+    chair(-0.18, -8.45, -Math.PI / 2, linen);
+    var dineRug = new THREE.Mesh(new THREE.PlaneGeometry(2.5, 1.7), rugMat);
+    dineRug.rotation.x = -Math.PI / 2;
+    dineRug.position.set(-0.95, 0.008, -8.45);
+    dineRug.receiveShadow = true;
+    scene.add(dineRug);
+
+    var pendant = new THREE.Group();
+    var cord = new THREE.Mesh(new THREE.CylinderGeometry(0.008, 0.008, 0.7, 6), metal);
+    cord.position.y = 0.35;
+    pendant.add(cord);
+    var drum = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.26, 0.16, 16, 1, true), shadeMat);
+    pendant.add(drum);
+    pendant.position.set(-0.95, 2.15, -8.45);
+    scene.add(pendant);
+
+    var sideboard = new THREE.Group();
+    addBox(sideboard, 1.45, 0.62, 0.42, walnut, 0, 0.5, 0);
+    addBox(sideboard, 1.5, 0.035, 0.46, stoneMat, 0, 0.82, 0);
+    addBox(sideboard, 0.01, 0.4, 0.4, linenDeep, 0, 0.5, 0.22);
+    sideboard.position.set(-2.75, 0, -10.3);
+    sideboard.rotation.y = Math.PI / 2;
+    scene.add(sideboard);
+
+    var desk = new THREE.Group();
+    addBox(desk, 2.5, 0.72, 0.7, espresso, 0, 0.46, 0);
+    addBox(desk, 2.62, 0.045, 0.82, stoneMat, 0, 0.84, 0.02);
+    addBox(desk, 0.28, 0.04, 0.2, walnut, -0.7, 0.9, 0.12);
+    addBox(desk, 0.24, 0.035, 0.18, navy, -0.68, 0.94, 0.14);
+    var stem = new THREE.Mesh(new THREE.CylinderGeometry(0.012, 0.016, 0.28, 8), metal);
+    stem.position.set(0.78, 1.02, 0.06);
+    desk.add(stem);
+    var cap = new THREE.Mesh(new THREE.CylinderGeometry(0.1, 0.13, 0.07, 12, 1, true), shadeMat);
+    cap.position.set(0.78, 1.18, 0.06);
+    desk.add(cap);
+    blob(desk, 1.4, 0.5);
+    desk.position.set(0.05, 0, -18.15);
+    scene.add(desk);
+    chair(-0.45, -17.15, Math.PI, sage);
+    chair(0.55, -17.15, Math.PI, sage);
+
+    var feature = new THREE.Group();
+    addBox(feature, 2.3, 1.35, 0.06, walnut, 0, 0, 0);
+    var logo = new THREE.Mesh(new THREE.PlaneGeometry(1.7, 1.02), brandMat);
+    logo.position.z = 0.04;
+    feature.add(logo);
+    feature.position.set(0.05, 1.65, -19.9);
+    scene.add(feature);
+
+    var services = [
+      {
+        num: "01",
+        title: "Interior Styling",
+        body: "Transform your space with our expert interior styling services. We specialize in creating harmonious, aesthetically pleasing environments that reflect your unique style and personality. Our team of skilled designers will work closely with you to select the perfect color schemes, furniture arrangements, and decorative elements that elevate your home or office to new heights of elegance and comfort."
+      },
+      {
+        num: "02",
+        title: "Interior Design Residential",
+        body: "Experience the luxury of bespoke residential interior design with Premium Interior Design. We offer comprehensive services tailored to your lifestyle and preferences, from space planning and custom furniture design to material selection and lighting solutions. Our goal is to create a living space that not only looks stunning but also enhances your daily life and increases your property value."
+      },
+      {
+        num: "03",
+        title: "Interior Design Commercial",
+        body: "Elevate your business environment with our professional commercial interior design services. We understand the unique challenges of commercial spaces and create designs that balance functionality, brand identity, and aesthetic appeal. From office layouts that boost productivity to retail spaces that enhance customer experience, we deliver innovative solutions that make a lasting impression on clients and employees alike."
+      }
+    ];
+    var shown = 0;
+    var buttons = document.querySelectorAll("#explore-dots button");
+    function showService(i) {
+      if (i === shown) return;
+      shown = i;
+      document.getElementById("explore-kicker").textContent = services[i].num;
+      document.getElementById("explore-title").textContent = services[i].title;
+      document.getElementById("explore-text").textContent = services[i].body;
+      for (var b = 0; b < buttons.length; b++) {
+        var on = b === i;
+        buttons[b].classList.toggle("is-on", on);
+        buttons[b].setAttribute("aria-pressed", on ? "true" : "false");
+      }
+    }
+    var keys = [
+      { t: 0, x: 1.05, y: 1.48, z: 2.35, tx: -1.55, ty: 0.72, tz: -1.85 },
+      { t: 0.22, x: 1.15, y: 1.38, z: -0.35, tx: -1.4, ty: 0.66, tz: -1.9 },
+      { t: 0.36, x: 0.05, y: 1.46, z: -3.55, tx: 0, ty: 0.9, tz: -6.4 },
+      { t: 0.5, x: 1.65, y: 1.58, z: -6.15, tx: -0.7, ty: 0.78, tz: -8.6 },
+      { t: 0.64, x: 1.8, y: 1.52, z: -6.85, tx: -0.55, ty: 0.74, tz: -8.85 },
+      { t: 0.74, x: 0.05, y: 1.5, z: -11.2, tx: 0.1, ty: 0.95, tz: -15.4 },
+      { t: 0.88, x: 1.45, y: 1.55, z: -13.7, tx: -0.05, ty: 1.0, tz: -18.1 },
+      { t: 1, x: 1.2, y: 1.48, z: -14.55, tx: 0, ty: 0.98, tz: -18.25 }
+    ];
+    function sample(p) {
+      var a = keys[0];
+      var b = keys[keys.length - 1];
+      for (var i = 0; i < keys.length - 1; i++) {
+        if (p >= keys[i].t && p <= keys[i + 1].t) { a = keys[i]; b = keys[i + 1]; break; }
+      }
+      var u = (p - a.t) / (b.t - a.t || 1);
+      u = u * u * (3 - 2 * u);
+      function mix(k) { return a[k] + (b[k] - a[k]) * u; }
+      camera.position.set(mix("x"), mix("y"), mix("z"));
+      camera.lookAt(mix("tx"), mix("ty"), mix("tz"));
+    }
+    function fit() {
+      var w = canvas.clientWidth || window.innerWidth;
+      var h = canvas.clientHeight || window.innerHeight;
+      renderer.setSize(w, h, false);
+      camera.aspect = w / Math.max(1, h);
+      camera.updateProjectionMatrix();
+    }
+    function draw(p) {
+      sample(p);
+      showService(p < 0.34 ? 0 : p < 0.7 ? 1 : 2);
+      var hint = document.getElementById("explore-hint");
+      var bar = document.getElementById("explore-bar");
+      if (hint) hint.style.opacity = p < 0.03 ? "1" : "0";
+      if (bar) bar.style.width = (p * 100) + "%";
+      renderer.render(scene, camera);
+    }
+    fit();
+    draw(0);
+    window.addEventListener("resize", function () { fit(); draw(exploreST ? exploreST.progress : 0); });
+
+    var exploreST = ScrollTrigger.create({
+      trigger: "#explore-pin",
+      start: "top top",
+      end: "+=240%",
+      pin: true,
+      scrub: 0.65,
+      anticipatePin: 1,
+      onUpdate: function (self) { draw(self.progress); },
+      onRefresh: function (self) { fit(); draw(self.progress); }
+    });
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var i = Number(btn.getAttribute("data-stop"));
+        var stops = [0.08, 0.54, 0.92];
+        var y = exploreST.start + (exploreST.end - exploreST.start) * stops[i];
+        if (lenis) lenis.scrollTo(y, { duration: 1.15 });
+        else window.scrollTo({ top: y, behavior: "smooth" });
+      });
+    });
+  }
+
+  function initTestimonials() {
+    var slides = gsap.utils.toArray(".t-slide");
+    var photos = gsap.utils.toArray("#t-portrait img");
+    var names = gsap.utils.toArray(".t-name");
+    document.getElementById("quotes").classList.add("is-ready");
+    var index = 0;
+    function show(next, dir) {
+      next = (next + slides.length) % slides.length;
+      if (next === index) return;
+      index = next;
+      slides.forEach(function (s, n) { s.classList.toggle("is-active", n === index); });
+      photos.forEach(function (img, n) { img.classList.toggle("is-on", n === index); });
+      names.forEach(function (btn, n) { btn.classList.toggle("is-on", n === index); });
+      if (!reduced) {
+        gsap.fromTo(slides[index], { y: 28 * dir, opacity: 0 }, { y: 0, opacity: 1, duration: 0.65, ease: "power3.out" });
+        gsap.fromTo(photos[index], { clipPath: dir > 0 ? "inset(0 0 0 100%)" : "inset(0 100% 0 0)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.8, ease: "power3.inOut" });
+      }
+    }
+    document.getElementById("t-prev").addEventListener("click", function () { show(index - 1, -1); });
+    document.getElementById("t-next").addEventListener("click", function () { show(index + 1, 1); });
+    names.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var target = Number(btn.getAttribute("data-t"));
+        show(target, target > index ? 1 : -1);
+      });
+    });
+  }
+
+  function initContactStack() {
+    if (reduced) return;
+    var contact = document.getElementById("contact");
+    contact.classList.add("is-stack");
+    if (window.matchMedia("(min-width: 800px)").matches) {
+      gsap.fromTo("#testimonials .t-layout", { scale: 1 }, {
+        scale: 0.94,
+        ease: "none",
+        transformOrigin: "50% 40%",
+        scrollTrigger: {
+          trigger: contact,
+          start: "top bottom",
+          end: "top top",
+          scrub: true
+        }
+      });
+    }
+    ScrollTrigger.create({
+      trigger: "#testimonials",
+      start: "top top",
+      endTrigger: contact,
+      end: "top top",
+      pin: true,
+      pinSpacing: false,
+      anticipatePin: 1
+    });
+  }
+
+  function initForm() {
+    var form = document.getElementById("contact-form");
+    var note = document.getElementById("form-note");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      var missing = false;
+      data.forEach(function (value) { if (!String(value).trim()) missing = true; });
+      if (missing || !form.reportValidity()) {
+        note.textContent = "Please complete every field.";
+        return;
+      }
+      note.textContent = "This form is not connected to a mail service. Please call +91 908 297 3329 to reach PREMIUM Interior Design in New Panvel.";
+    });
+  }
+})();
+</script>
+</body>
+</html>
